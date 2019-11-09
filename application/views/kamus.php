@@ -49,10 +49,20 @@
                 </div>
                 <div class="container wow fadeInUp delay-05s">
                     <div class="col-md-12 text-center section-padding">
-                        <h2 class="bnr-sub-title">BIPA</h2>
-                        <h3 class="bnr-para">Kamus</h3>
+                        <h2 class="bnr-sub-title">SMART BIPA</h2>
+                        <h3 class="bnr-para">Kamus Sederet.com</h3>
                     </div>
-                    <iframe class="h_iframe" src="https://sederet.com/" name="iframe_a"></iframe>
+                    <!-- Column -->
+                    <div class="row">
+                        <!-- Column -->
+                        <div class="col-md-12">
+                            <div class="card card-hover">
+                                <div class="box bg-rectangle-brown text-center">
+                                    <iframe class="h_iframe" src="https://sederet.com/" name="iframe_a"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
         </div>
         </section>

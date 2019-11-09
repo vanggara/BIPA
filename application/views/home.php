@@ -142,14 +142,6 @@
             <!-- Column -->
             <!-- Column -->
             <div class="col-md-6">
-              <div class="card card-hover" onclick="location.href='tata-bahasa'">
-                <div class="box bg-brown text-center">
-                  <h1 class="font-light text-white"><i class="fa fa-comment"></i></h1>
-                  <h6 class="text-white">Tata Bahasa</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
               <div class="card card-hover" onclick="location.href='youtube'">
                 <div class="box bg-brown text-center">
                   <h1 class="font-light text-white"><i class="fa fa-youtube-play"></i></h1>
@@ -158,8 +150,6 @@
               </div>
             </div>
             <!-- Column -->
-          </div>
-          <div class="row">
             <!-- Column -->
             <div class="col-md-6">
               <div class="card card-hover" onclick="location.href='daftar_pustaka'">
@@ -170,8 +160,10 @@
               </div>
             </div>
             <!-- Column -->
+          </div>
+          <div class="row">
             <!-- Column -->
-            <div class="col-md-6">
+            <div class="col-md-12">
               <div class="card card-hover" onclick="location.href='profil'">
                 <div class="box bg-brown text-center">
                   <h1 class="font-light text-white"><i class="fa fa-address-card"></i></h1>

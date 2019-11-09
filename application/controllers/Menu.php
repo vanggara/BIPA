@@ -15,7 +15,8 @@ class Menu extends CI_Controller {
 
 	public function informasi()
 	{
-	  $this->load->view('informasi');
+        $this->load->model('mInformasi');
+        $this->mInformasi->maps();
 	}
 
 	public function next_petunjuk($id='')
@@ -55,11 +56,6 @@ class Menu extends CI_Controller {
 		$this->load->view('ujian-input-nama');
 	}
 	  
-  	public function tata_bahasa()
-	{
-		$this->load->view('tata-bahasa');
-	  }
-	  
   	public function profil()
 	{
 		$this->load->view('profil');
@@ -68,5 +64,10 @@ class Menu extends CI_Controller {
   	public function latihan()
 	{
 		$this->load->view('latihan_awal');
+	  }	  
+	  
+  	public function tebak_kata()
+	{
+		$this->load->view('tebak_kata_awal');
   	}
 }

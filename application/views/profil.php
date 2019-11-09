@@ -57,13 +57,13 @@
                                 <h4>Smart Bipa Founder</h4>
                                 <p></p>
                                 <ul class="list basic_info">
-                                    <li><a href=<?php echo base_url('assets/profil/#')?>><i
+                                    <li><a><i
                                                 class="lnr lnr-calendar-full"></i> <strong>Tempat, Tanggal Lahir:</strong> Probolinggo, 17th July, 1997</a></li>
-                                    <li><a href=<?php echo base_url('assets/profil/#')?>><i class="lnr lnr-home"></i>
+                                    <li><a><i class="lnr lnr-home"></i>
                                     <strong>Alamat:</strong> Jln. Lumajang No 174, Kedung Asem RT.001/RT.006<br>KecamatanWonoasih Kota Proobolinggo, Jawa Timur.</a></li>
-                                    <li><a href=<?php echo base_url('assets/profil/#')?>><i
+                                    <li><a><i
                                                 class="lnr lnr-graduation-hat"></i> <strong>Jurusan:</strong> Pendidikan Bahasa Indonesia, Universitas Brawijaya.</a></li>
-                                    <li><a href=<?php echo base_url('assets/profil/#')?>><i
+                                    <li><a><i
                                                 class="lnr lnr-graduation-hat"></i> <strong>NIM:</strong> 165110701111005</a></li>
                                 </ul>
                                 <!-- <ul class="list personal_social">

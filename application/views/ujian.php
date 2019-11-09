@@ -34,6 +34,7 @@
 </head>
 
 <body>
+    <div id="overlay" onclick="off()"></div>
     <div class="loader"></div>
     <div id="myDiv">
         <!--HEADER-->
@@ -53,66 +54,79 @@
                     </header>
                 </div>
                 <?php foreach ($content->result_array() as $key): ?>
-                <?php $kunci = $this->db->query('SELECT kunci AS knc FROM soal_ujian where id='.$key['id'].';')->row()->knc;?>
                 <div class="container wow fadeInUp delay-05s">
-
-                    <div class="col-md-12 text-center">
-                        <h2 class="bnr-sub-title">Ujian</h2>
-                        <form method="post" action="<?php echo base_url('CUjian/ujian/'.$key['id']);?>">
-                            <!-- Column -->
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="box bg-jawab">
-                                        <h3 class="bnr-para"><?php echo $key['pertanyaan'] ?></h3>
-                                        <audio controls>
-                                            <source src='<?php echo base_url('assets/audio/'.$key['audio'])?>'
-                                                type="audio/mpeg" duration="infinity">
-                                            Your browser does not support the audio element.
-                                        </audio>
-                                    <?php if($key['id']>=20){ ?>
+                        <form method="post" action="<?php echo base_url('CUjian/page/'.$key['id']);?>">
+                        <!-- Column -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <br>
+                                <br>
+                                <br>
+                                <div class="box bg-jawab">
+                                    <h4 class="bnr-para-rectangle">
+                                        <strong><?php echo $key['nomor_ujian']?></strong></h4>
+                                    <br>
+                                    <?php if( $key['text_1'] != NULL){?>
+                                    <h5 class="bnr-para"><?php echo $key['text_1'] ?></h5>
+                                    <?php } ?>
+                                    <?php if( $key['gambar'] != NULL){?>
+                                    <div>
+                                        <img class="gambar" src="<?php echo base_url($key['gambar'])?>" alt="">
+                                    </div>
+                                    <?php } ?>
+                                    <?php if( $key['text_2'] != NULL){?>
+                                    <h5 class="bnr-para"><?php echo $key['text_2'] ?></h5>
+                                    <?php } ?>
+                                    <?php if($key['audio']!=NULL){ ?>
+                                    <audio controls>
+                                        <source src='<?php echo base_url('assets/audio/'.$key['audio'])?>'
+                                            type="audio/mpeg" duration="infinity">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                    <?php } ?> 
+                                    <br>
+                                    <h4 class="bnr-para"><?php echo $key['pertanyaan'] ?></h4>
+                                    <?php if($key['id']>=21){ ?>
                                     <div class="form-group">
                                         <input required type="text" class="form-control form-control-user" name="jawaban"
-                                            id="jawaban" placeholder="Jawab">
+                                            id="jawaban" placeholder="Jawaban">
                                     </div>
                                     <?php }else{ ?>
-                                        <div class="card card-hover">
-                                            <label class="radio"><input type="radio" id="jawaban" name="jawaban" value='<?php echo $key['a'] ?>'>
-                                                <?php echo $key['a'] ?></label>
-                                            <label class="radio"><input type="radio" id="jawaban" name="jawaban" value='<?php echo $key['b'] ?>'>
-                                                <?php echo $key['b'] ?></label>
-                                            <label class="radio"><input type="radio" id="jawaban" name="jawaban" value='<?php echo $key['c'] ?>'>
-                                                <?php echo $key['c'] ?></label>
-                                            <label class="radio"><input type="radio" id="jawaban" name="jawaban" value='<?php echo $key['d'] ?>'>
-                                                <?php echo $key['d'] ?></label>
-                                        </div>
+                                    <div class="card card-hover">
+                                        <label class="radio"><input type="radio" id="jawaban" name="jawaban"
+                                                value='<?php echo $key['a'] ?>'>
+                                            <?php echo $key['a'] ?></label>
+                                        <label class="radio"><input type="radio" id="jawaban" name="jawaban"
+                                                value='<?php echo $key['b'] ?>'>
+                                            <?php echo $key['b'] ?></label>
+                                        <label class="radio"><input type="radio" id="jawaban" name="jawaban"
+                                                value='<?php echo $key['c'] ?>'>
+                                            <?php echo $key['c'] ?></label>
+                                        <label class="radio"><input type="radio" id="jawaban" name="jawaban"
+                                                value='<?php echo $key['d'] ?>'>
+                                            <?php echo $key['d'] ?></label>
+                                    </div>
                                     <?php } ?>
-                                        <button type="submit" name="submit" value="login"
+                                        <button type="submit" name="submit" value="submit"
                                             class="btn btn-primary btn-user btn-block">
                                             Kirim Jawaban
                                         </button>
-                                    </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </section>
             <?php endforeach ?>
         </div>
     </div>
+    <!-- Modal -->
 </body>
-  <!---->
-  <footer id="footer">
-    <div class="container">
-      <div class="row text-center">
-        <p> <?php echo date("Y"); ?> &copy; Rundeveloper. All Rights Reserved.</p>
-      </div>
-    </div>
-  </footer>
-  <!---->
+
 
 
 </div>
+
 <script src=<?php echo base_url('assets/js/jquery.min.js')?>></script>
 <script src=<?php echo base_url('assets/js/jquery.easing.min.js')?>></script>
 <script src=<?php echo base_url('assets/js/bootstrap.min.js')?>></script>
@@ -121,6 +135,5 @@
 <script src=<?php echo base_url('assets/js/custom.js')?>></script>
 <script src=<?php echo base_url('assets/contactform/contactform.js')?>></script>
 <script src=<?php echo base_url('https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')?>></script>
-
 
 </html>

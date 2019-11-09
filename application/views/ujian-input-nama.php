@@ -25,7 +25,7 @@
     <link rel="stylesheet" href=<?php echo base_url('assets/gallery/styles.css')?>>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src=<?php echo base_url('https://www.googletagmanager.com/gtag/js?id=UA-42988408-2')?>></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42988408-2"></script>
 </head>
 
 <body>
@@ -39,7 +39,7 @@
                         <nav class="navbar navbar-default navbar-fixed-top">
                             <div class="container">
                                 <div class="navbar-header">
-                                    <a class="navbar-brand" href=<?php echo base_url('home')?>><img
+                                    <a class="navbar-brand" href="home"><img
                                             src=<?php echo base_url('assets/img/bipa-transparan.png')?> width="200"
                                             height="50"></a>
                                 </div>
@@ -49,51 +49,73 @@
                 </div>
                 <div class="container wow fadeInUp delay-05s">
                     <div class="col-md-12 text-center section-padding">
-                        <h2 class="bnr-sub-title">UJIAN BIPA</h2>
-                        <h3 class="bnr-para">ISI DENGAN BENAR</h3>
-                        <form method="post" action="<?php echo base_url('action_ujian_nama');?>">
-                            <div class="form-group">
-                                    <input required type="text" class="form-control form-control-user" name="nama" id="nama"
-                                        placeholder="Nama Lengkap">
-                            </div>
-                            <div class="form-group">
-                                    <input required type="text" class="form-control form-control-user" name="asal" id="asal"
-                                        placeholder="Asal">
-                            </div>
-                            <hr>
-                            <button type="submit" name="login" value="login" class="btn btn-primary btn-user btn-block">
-                                Mulai
-                            </button>
-                        </form>
+                        <h2 class="bnr-sub-title">UJIAN SMART BIPA</h2>
                     </div>
+                    <!-- Column -->
+                    <form method="post" action="<?php echo base_url('CUjian/action_nama_ujian/0')?>">
+                        <div class="row">
+                            <!-- Column -->
+                            <div class="col-md-12">
+                                <div class="card card-hover">
+                                    <div class="box bg-rectangle-brown text-center">
+                                        <h4 class="bnr-para-rectangle">
+                                            <strong>Instruksi</strong></h4>
+                                        <h5 class="bnr-para-rectangle">
+                                            Pada ujian ini simaklah audio mengenai wisata kuliner lokal khas Malang
+                                            budaya
+                                            Indonesia dengan seksama kemudian jawablah soal dengan benar !</h5>
+                                        <br>
+                                        <h4 class="bnr-para-rectangle">
+                                            <i><strong>Directions</strong></i></h4>
+                                        <h5 class="bnr-para-rectangle">
+                                            <i>In this test, look at the audio about local culinary tourism typical
+                                                of
+                                                Malang, Indonesian culture, carefully, then answer the questions
+                                                correctly!</i></h5>
+                                        <hr>
+                                        <div class="form-group">
+                                            <input required type="text" class="form-control form-control-user"
+                                                name="nama" id="nama" placeholder="Nama Lengkap">
+                                        </div>
+                                        <div class="form-group">
+                                            <input required type="text" class="form-control form-control-user"
+                                                name="asal" id="asal" placeholder="Asal">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Column -->
+                        </div>
+                        <button type="submit" name="login" value="login" class="btn btn-primary btn-user btn-block">
+                            Mulai
+                        </button>
+                    </form>
                 </div>
         </div>
         </section>
     </div>
+    <!---->
+    <!---->
+    <footer id="footer">
+        <div class="container">
+            <div class="row text-center">
+                <p> <?php echo date("Y"); ?> &copy; Rundeveloper. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!---->
     </div>
+    <script src=<?php echo base_url('assets/js/jquery.min.js')?>></script>
+    <script src=<?php echo base_url('assets/js/jquery.easing.min.js')?>></script>
+    <script src=<?php echo base_url('assets/js/bootstrap.min.js')?>></script>
+    <script src=<?php echo base_url('assets/js/wow.js')?>></script>
+    <script src=<?php echo base_url('assets/js/jquery.bxslider.min.js')?>></script>
+    <script src=<?php echo base_url('assets/js/custom.js')?>></script>
+    <script src=<?php echo base_url('assets/contactform/contactform.js')?>></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
 
 </body>
-
-  <!---->
-  <footer id="footer">
-    <div class="container">
-      <div class="row text-center">
-        <p> <?php echo date("Y"); ?> &copy; Rundeveloper. All Rights Reserved.</p>
-      </div>
-    </div>
-  </footer>
-  <!---->
-<!---->
-<!---->
-</div>
-<script src=<?php echo base_url('assets/js/jquery.min.js')?>></script>
-<script src=<?php echo base_url('assets/js/jquery.easing.min.js')?>></script>
-<script src=<?php echo base_url('assets/js/bootstrap.min.js')?>></script>
-<script src=<?php echo base_url('assets/js/wow.js')?>></script>
-<script src=<?php echo base_url('assets/js/jquery.bxslider.min.js')?>></script>
-<script src=<?php echo base_url('assets/js/custom.js')?>></script>
-<script src=<?php echo base_url('assets/contactform/contactform.js')?>></script>
-<script src=<?php echo base_url('https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')?>></script>
-
 
 </html>

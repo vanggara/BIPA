@@ -122,7 +122,7 @@
                   </tfoot>
                   <?php foreach ($content->result_array() as $key): ?>
                   <tr>
-                    <td><?php echo $key['nama'] ?></td>
+                    <td><?php echo $key['username'] ?></td>
                     <td><?php echo $key['asal'] ?></td>
                     <td>
                       <button class="btn btn-primary btn-xs"

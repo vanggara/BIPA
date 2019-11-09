@@ -49,14 +49,25 @@
                 </div>
                 <div class="container wow fadeInUp delay-05s">
                     <div class="col-md-12 text-center section-padding">
-                        <h2 class="text-center">TERIMAKASIH SUDAH BERLATIH</h2>
+                        <?php if($score < 70){ ?>
+                        <h3 class="bnr-para-rectangle">Sayang sekali, Anda belum berhasil menyelesaikan pelajaran ini !</h3>
+                        <?php }else{ ?>
+                        <h3 class="bnr-para-rectangle">Wow, Anda berhasil menyelesaikan pelajaran ini !</h3>
+                        <?php } ?>
+                        <h3 class="bnr-para-rectangle" color="red">Score anda : <?php echo $score ?></h3>
                     </div>
                     <!-- Column -->
                     <div class="col-md-12">
                         <div class="card">
                             <div class="box text-center">
-                            <h1 class="smile-white"><i class="fa fa-smile-o"></i></h1>
-                            <button type="button" class="btn btn-success" onclick="location.href='<?php echo base_url('home')?>'">Back to Menu</button>
+                                <?php if($score < 70){ ?>
+                                <h1 class="smile-white"><i class="fa fa-frown-o"></i>
+                                </h1>
+                                <?php }else{ ?>
+                                <h1 class="smile-white"><i class="fa fa-smile-o"></i></h1>
+                                <?php } ?>
+                                <button type="button" class="btn btn-success"
+                                    onclick="location.href='<?php echo base_url('home')?>'">Back to Menu</button>
                             </div>
                         </div>
                     </div>

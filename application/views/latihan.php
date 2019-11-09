@@ -88,8 +88,8 @@
                                     <h4 class="bnr-para"><?php echo $key['pertanyaan'] ?></h4>
                                     <?php if($key['id']>=11){ ?>
                                     <div class="form-group">
-                                        <input required type="text" class="form-control form-control-user" name="jawab"
-                                            id="jawab" placeholder="Jawab">
+                                        <input required type="text" class="form-control form-control-user" name="jawaban"
+                                            id="jawaban" placeholder="Jawaban">
                                     </div>
                                     <?php }else{ ?>
                                     <div class="card card-hover">

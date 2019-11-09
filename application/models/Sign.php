@@ -46,7 +46,7 @@ class Sign extends CI_Model {
             {
                     $error = $this->db->error(); // Has keys 'code' and 'message'
             }else{
-                $data['content'] = $this->db->query("SELECT * from hasil_ujian;");
+                $data['content'] = $this->db->query("SELECT DISTINCT user.username, user.asal FROM hasil_ujian join user on hasil_ujian.id_user = user.id ");
                 $this->load->view('hasil_ujian', $data);
             }
         }else{
