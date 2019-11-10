@@ -5,7 +5,7 @@ class CTebak extends CI_Controller {
 
     public function page($id='')
 	{
-        $cek_jawaban=$this->db->query("SELECT * FROM hasil_tebak_kata WHERE id_user = '$_SESSION[id_user]' AND id_soal = '$id'");
+        $cek_jawaban=$this->db->query("SELECT * FROM hasil_tebak_kata WHERE id_user = '$_SESSION[id_user]' AND id_tebak_kata = '$id'");
 		if($cek_jawaban->num_rows() > 0 ){
                     $kunci =  $this->db->query('SELECT kunci AS knc from tebak_kata where id = "'.$id.'"')->row()->knc;
                     if(isset($_POST['jawaban'])){
@@ -19,7 +19,7 @@ class CTebak extends CI_Controller {
                             'status_jawaban' => $status
                         ];
                         // var_dump($status);
-                        $this->db->where('id_soal', $id);
+                        $this->db->where('id_tebak_kata', $id);
                         $this->db->where('id_user', $_SESSION['id_user']);
                         $this->db->update('hasil_tebak_kata', $data);
                     }
@@ -36,7 +36,7 @@ class CTebak extends CI_Controller {
                     }
                     $data = [
                         'id_user' => $_SESSION['id_user'],
-                        'id_soal' => $id,
+                        'id_tebak_kata' => $id,
                         'jawaban' => $_POST['jawaban'],
                         'status_jawaban' => $status
                     ];
@@ -53,24 +53,22 @@ class CTebak extends CI_Controller {
                     }
                     $data = [
                         'id_user' => $_SESSION['id_user'],
-                        'id_soal' => $id,
+                        'id_tebak_kata' => $id,
                         'jawaban' => $_POST['jawaban'],
                         'status_jawaban' => $status
                     ];
                     $this->db->insert('hasil_tebak_kata', $data);
-                    $benar_pilgan = $this->db->query('SELECT * from hasil_tebak_kata where id_soal <= 20 AND id_user = '.$_SESSION['id_user'].' AND status_jawaban = 1');
-                    $benar_essay = $this->db->query('SELECT * from hasil_tebak_kata where id_soal >= 21 AND id_user = '.$_SESSION['id_user'].' AND status_jawaban = 1');
-                    $score_pilgan = $benar_pilgan->num_rows()*2.5;
-                    $score_essay = $benar_essay->num_rows()*10;
-                    $data['score'] =  $score_pilgan+$score_essay;
-                    $skor = $score_pilgan+$score_essay;
+                    $benar = $this->db->query('SELECT * from hasil_tebak_kata where id_user = '.$_SESSION['id_user'].' AND status_jawaban = 1');
+                    $score = $benar->num_rows();
+                    $data['score'] =  $score;
+                    $skor = $score;
                     $add = [
                         'id_user' => $_SESSION['id_user'],
                         'score' => $skor
                     ];
+                    // var_dump($add);
+                    // var_dump($_SESSION['id_user']);
                     $this->db->insert('score', $add);
-                    // var_dump($score_pilgan);
-                    // var_dump($score_essay);
                     $this->load->view('tebak_kata_selesai',$data);
         // redirect('selesai','refresh');
                 }

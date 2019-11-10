@@ -64,6 +64,27 @@ html, body {
   text-align: center;
 }
 
+.trophy-bronze {
+  font-size: 200px; 
+  color: #a04f12;
+  float: none;
+  text-align: center;
+}
+
+.trophy-silver {
+  font-size: 200px; 
+  color: #b9b7b7;
+  float: none;
+  text-align: center;
+}
+
+.trophy-gold {
+  font-size: 200px; 
+  color: #e6e600;
+  float: none;
+  text-align: center;
+}
+
 #overlay {
   position: fixed;
   display: none;

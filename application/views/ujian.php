@@ -94,16 +94,16 @@
                                     <?php }else{ ?>
                                     <div class="card card-hover">
                                         <label class="radio"><input type="radio" id="jawaban" name="jawaban"
-                                                value='<?php echo $key['a'] ?>'>
+                                                value='<?php echo $key['a'] ?>' required>
                                             <?php echo $key['a'] ?></label>
                                         <label class="radio"><input type="radio" id="jawaban" name="jawaban"
-                                                value='<?php echo $key['b'] ?>'>
+                                                value='<?php echo $key['b'] ?>' required>
                                             <?php echo $key['b'] ?></label>
                                         <label class="radio"><input type="radio" id="jawaban" name="jawaban"
-                                                value='<?php echo $key['c'] ?>'>
+                                                value='<?php echo $key['c'] ?>' required>
                                             <?php echo $key['c'] ?></label>
                                         <label class="radio"><input type="radio" id="jawaban" name="jawaban"
-                                                value='<?php echo $key['d'] ?>'>
+                                                value='<?php echo $key['d'] ?>' required>
                                             <?php echo $key['d'] ?></label>
                                     </div>
                                     <?php } ?>

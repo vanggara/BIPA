@@ -5,16 +5,16 @@ class Admin extends CI_Controller {
 
 	public function hasil_ujian()
 	{
-        $data['content'] = $this->db->query('SELECT * from hasil_ujian');
-        $this->load->view('hasil_ujian', $data);
+    $this->load->model('Sign');
+    $this->Sign->hasil_ujian();
   }
 	public function admin_login()
 	{
     if(!isset($_SESSION['login'])){
       $this->load->view('admin_login');
     }else{
-      $data['content'] = $this->db->query('SELECT * from hasil_ujian');
-      $this->load->view('hasil_ujian', $data);
+      $this->load->model('Sign');
+      $this->Sign->hasil_ujian();
     }
   }
   public function action_admin_login()

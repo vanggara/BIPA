@@ -14,10 +14,8 @@ class Sign extends CI_Model {
         
                 if ( !$this->db->query("SELECT * from user where username = '".$username."' AND password = '".$password."';"))
                 {
-                    // echo "ok";
                         $error = $this->db->error(); // Has keys 'code' and 'message'
                 }else{
-                    // echo "ok2";
                     $query = $this->db->query("SELECT * from user where username = '".$username."' AND password = '".$password."';");
 
                     if($query->num_rows() == 1)
@@ -42,11 +40,11 @@ class Sign extends CI_Model {
 
     public function hasil_ujian(){
         if(isset($_SESSION['login'])){
-            if ( !$this->db->query("SELECT * from hasil_ujian;"))
+            if ( !$this->db->query("SELECT DISTINCT user.username, user.asal, hasil_ujian.id_user FROM hasil_ujian join user on hasil_ujian.id_user = user.id"))
             {
                     $error = $this->db->error(); // Has keys 'code' and 'message'
             }else{
-                $data['content'] = $this->db->query("SELECT DISTINCT user.username, user.asal FROM hasil_ujian join user on hasil_ujian.id_user = user.id ");
+                $data['content'] = $this->db->query("SELECT DISTINCT user.username, user.asal, hasil_ujian.id_user FROM hasil_ujian join user on hasil_ujian.id_user = user.id");
                 $this->load->view('hasil_ujian', $data);
             }
         }else{

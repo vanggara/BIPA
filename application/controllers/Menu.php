@@ -69,5 +69,6 @@ class Menu extends CI_Controller {
   	public function tebak_kata()
 	{
 		$this->load->view('tebak_kata_awal');
-  	}
+	  }
+	
 }

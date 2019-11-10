@@ -94,8 +94,14 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <?php foreach ($content->result() as $key): ?>
-                        <h1 class="h3 mb-0 text-gray-800">Hasil Ujian <?php echo $key->nama?></h1>
+                        <?php foreach ($content2->result() as $key): ?>
+                        <h1 class="h3 mb-0 text-gray-800">Nama: <?php echo $key->username?></h1>
+                        <?php endforeach ?>
+                        <?php foreach ($content2->result() as $key): ?>
+                        <h6 class="m-0 font-weight-bold text-primary">Asal: <?php echo $key->asal?></h6>
+                        <?php endforeach ?>
+                        <?php foreach ($content3->result() as $key): ?>
+                        <h4 class="m-0 font-weight-bold text-primary">Score: <?php echo $key->score?></h4>
                         <?php endforeach ?>
                     </div>
                     <div class="row">
@@ -104,12 +110,6 @@
                         <div class="col-xl-12 col-lg-7">
                             <div class="card shadow mb-4">
                                 <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <?php foreach ($content->result() as $key): ?>
-                                    <h6 class="m-0 font-weight-bold text-primary">Asal <?php echo $key->asal?></h6>
-                                    <?php endforeach ?>
-                                </div>
                                 <!-- Card Body -->
 
                                 <div class="card-body">
@@ -126,280 +126,16 @@
                                                     <?php $numb++ ?>
                                                     <div class="col-sm-10">
                                                         <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j1?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j2?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j3?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j4?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j5?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j6?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j7?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j8?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j9?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j10?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j11?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j12?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j13?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j14?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j15?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j16?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j17?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j18?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j19?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j20?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j21?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j22?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j23?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j24?>">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <label class="col-sm-2 col-sm-2 control-label"><?php echo $label?>
-                                                        <?php echo $numb?></label>
-                                                    <?php $numb++ ?>
-                                                    <div class="col-sm-10">
-                                                        <input readonly type="text" class="form-control round-form"
-                                                            name="isbn_number" value="<?php echo $key->j25?>">
+                                                            name="jawaban" value="<?php echo $key->jawaban?>">
                                                     </div>
                                                 </div>
                                             </div>
                                             <?php endforeach ?>
+
                                         </section>
                                     </section>
                                 </div>
                             </div>
-                            <!-- </form> -->
                             <!-- </form> -->
                         </div>
                     </div>

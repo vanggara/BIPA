@@ -126,7 +126,7 @@
                     <td><?php echo $key['asal'] ?></td>
                     <td>
                       <button class="btn btn-primary btn-xs"
-                        onclick="window.location.href = '<?php echo base_url() ?>Admin/detail_hasil_ujian/<?php echo $key['id'] ?>'"><i
+                        onclick="window.location.href = '<?php echo base_url() ?>Admin/detail_hasil_ujian/<?php echo $key['id_user'] ?>'"><i
                           class="fa fa-search"></i></button>
                       <button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#hapus"><i
                           class="fa fa-trash "></i></button>

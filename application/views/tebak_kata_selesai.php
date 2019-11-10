@@ -12,11 +12,6 @@
     jasa aplikasi malang, jasa pembuatan website malang, kota malang, aplikasi jombang, jombang, software jombang, website jombang, bikin website jombang,
     info jombang, bikin aplikasi jombang">
 
-
-    <link rel="stylesheet"
-        href=<?php echo base_url('https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css')?>>
-    <script src=<?php echo base_url('https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')?>></script>
-    <script src=<?php echo base_url('https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js')?>></script>
     <link rel="stylesheet" type="text/css"
         href=<?php echo base_url('https://fonts.googleapis.com/css?family=Roboto:400,300|Raleway:300,400,900,700italic,700,300,600')?>>
     <link rel="stylesheet" type="text/css" href=<?php echo base_url('assets/css/jquery.bxslider.css')?>>
@@ -34,7 +29,6 @@
 </head>
 
 <body>
-    <div id="overlay" onclick="off()"></div>
     <div class="loader"></div>
     <div id="myDiv">
         <!--HEADER-->
@@ -53,67 +47,47 @@
                         </nav>
                     </header>
                 </div>
-                <?php foreach ($content->result_array() as $key): ?>
                 <div class="container wow fadeInUp delay-05s">
-                        <form method="post" action="<?php echo base_url('CTebak/page/'.$key['id']);?>">
-                        <!-- Column -->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <br>
-                                <br>
-                                <br>
-                                <div class="box bg-jawab">
-                                    <?php if($key['audio_1']!=NULL){ ?>
-                                    <h5 class="bnr-para">Dengarkan Instruksi berikut !</h5>
-                                    <audio controls autoplay>
-                                        <source src='<?php echo base_url('assets/audio/'.$key['audio_1'])?>'
-                                            type="audio/mpeg" duration="infinity" autoplay>
-                                        Your browser does not support the audio element.
-                                    </audio>
-                                    <hr>
-                                    <?php } ?> 
-                                    <?php if( $key['gambar'] != NULL){?>
-                                    <div>
-                                        <img class="gambar" src="<?php echo base_url($key['gambar'])?>" alt="">
-                                    </div>
-                                    <?php } ?>
-                                    <?php if($key['audio_2']!=NULL){ ?>
-                                    <h5 class="bnr-para">Mainkan audio dibawah ini untuk dapat menjawab !</h5>
-                                    <audio controls>
-                                        <source src='<?php echo base_url('assets/audio/'.$key['audio_2'])?>'
-                                            type="audio/mpeg" duration="infinity">
-                                        Your browser does not support the audio element.
-                                    </audio>
-                                    <?php } ?> 
-                                    <br>
-                                    <div class="card card-hover">
-                                        <label class="radio"><input type="radio" id="jawaban" name="jawaban"
-                                                value='<?php echo $key['a'] ?>' required>
-                                            <?php echo $key['a'] ?></label>
-                                        <label class="radio"><input type="radio" id="jawaban" name="jawaban"
-                                                value='<?php echo $key['b'] ?>' required>
-                                            <?php echo $key['b'] ?></label>
-                                    </div>
-                                        <button type="submit" name="submit" value="submit"
-                                            class="btn btn-primary btn-user btn-block">
-                                            Kirim Jawaban
-                                        </button>
-                                </div>
+                    <div class="col-md-12 text-center section-padding">
+                        <?php if($score <= 5){ ?>
+                            <h3 class="bnr-para-rectangle">Selamat, Anda mendapatkan Trophy Bronze !</h3>
+                            <h3 class="bnr-para-rectangle" color="red">Score anda : <?php echo $score ?></h3>
+                        <?php }else if($score >= 6 && $score <= 10){ ?>
+                            <h3 class="bnr-para-rectangle">Selamat, Anda mendapatkan Trophy Silver !</h3>
+                            <h3 class="bnr-para-rectangle" color="red">Score anda : <?php echo $score ?></h3>
+                        <?php } else if($score >= 11){?>
+                            <h3 class="bnr-para-rectangle">Selamat, Anda mendapatkan Trophy Gold !</h3>
+                            <h3 class="bnr-para-rectangle" color="red">Score anda : <?php echo $score ?></h3>
+                        <?php }?>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="box text-center">
+                                <?php if($score <= 5){ ?>
+                                <h1 class="trophy-bronze"><i class="fa fa-trophy"></i>
+                                </h1>
+                                <?php }else if($score >= 6 && $score <= 10){ ?>
+                                <h1 class="trophy-silver"><i class="fa fa-trophy"></i></h1>
+                                <?php }else if($score >= 11){ ?>
+                                <h1 class="trophy-gold"><i class="fa fa-trophy"></i></h1>
+                                <?php } ?>
+                                <button type="button" class="btn btn-success"
+                                    onclick="location.href='<?php echo base_url('home')?>'">Back to Menu</button>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
-            </section>
-            <?php endforeach ?>
         </div>
+        </section>
     </div>
-    <!-- Modal -->
+    </div>
+
 </body>
 
-
-
+<!---->
+<!---->
 </div>
-
 <script src=<?php echo base_url('assets/js/jquery.min.js')?>></script>
 <script src=<?php echo base_url('assets/js/jquery.easing.min.js')?>></script>
 <script src=<?php echo base_url('assets/js/bootstrap.min.js')?>></script>
@@ -122,5 +96,6 @@
 <script src=<?php echo base_url('assets/js/custom.js')?>></script>
 <script src=<?php echo base_url('assets/contactform/contactform.js')?>></script>
 <script src=<?php echo base_url('https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')?>></script>
+
 
 </html>
