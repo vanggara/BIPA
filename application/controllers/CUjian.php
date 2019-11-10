@@ -9,7 +9,7 @@ class CUjian extends CI_Controller {
 		if($cek_jawaban->num_rows() > 0 ){
                     $kunci =  $this->db->query('SELECT kunci AS knc from soal_ujian where id = "'.$id.'"')->row()->knc;
                     if(isset($_POST['jawaban'])){
-                        if($kunci==$_POST['jawaban']){
+                        if(strcasecmp($kunci==$_POST['jawaban']) == 0){
                             $status = "1";
                         }else{
                             $status = "0";
@@ -29,7 +29,7 @@ class CUjian extends CI_Controller {
             $max = $this->db->query('SELECT MAX(id) AS maxid FROM soal_ujian')->row()->maxid;
                 if(isset($_POST['jawaban'])&&$id!=$max){
                     $kunci =  $this->db->query('SELECT kunci AS knc from soal_ujian where id = "'.$id.'"')->row()->knc;
-                    if($kunci==$_POST['jawaban']){
+                    if(strcasecmp($kunci==$_POST['jawaban']) == 0){
                         $status = "1";
                     }else{
                         $status = "0";
@@ -46,7 +46,7 @@ class CUjian extends CI_Controller {
                     $this->load->view('ujian', $data);
                 }else if($id==$max){      
                     $kunci =  $this->db->query('SELECT kunci AS knc from soal_ujian where id = "'.$id.'"')->row()->knc;
-                    if($kunci==$_POST['jawaban']){
+                    if(strcasecmp($kunci==$_POST['jawaban']) == 0){
                         $status = "1";
                     }else{
                         $status = "0";
