@@ -50,6 +50,7 @@
                 <div class="container wow fadeInUp delay-05s">
                     <div class="col-md-12 text-center section-padding">
                         <h2 class="bnr-sub-title">LATIHAN SMART BIPA</h2>
+                        <h3 class="bnr-para">Wawasan Wisata Kuliner Budaya Indonesia</h3>
                     </div>
                     <!-- Column -->
                     <form method="post" action="<?php echo base_url('Clatihan/action_nama_latihan/0')?>">
@@ -62,8 +63,11 @@
                                             <strong>Instruksi</strong></h4>
                                         <h5 class="bnr-para-rectangle">
                                             Pada latihan ini simaklah audio mengenai wisata kuliner lokal khas Malang
-                                            budaya
-                                            Indonesia dengan seksama kemudian jawablah soal dengan benar !</h5>
+                                            budaya Indonesia dengan seksama kemudian jawablah soal dengan benar !</h5>
+                                        <audio controls autoplay>
+                                            <source src="assets/audio/INSTRUKSI LATIHAN.mpeg" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
                                         <br>
                                         <h4 class="bnr-para-rectangle">
                                             <i><strong>Directions</strong></i></h4>
@@ -72,6 +76,10 @@
                                                 of
                                                 Malang, Indonesian culture, carefully, then answer the questions
                                                 correctly!</i></h5>
+                                        <audio controls>
+                                            <source src="assets/audio/INSTRUKSI BHS INGGRIS.mpeg" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
                                         <hr>
                                         <div class="form-group">
                                             <input required type="text" class="form-control form-control-user"

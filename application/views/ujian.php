@@ -78,9 +78,9 @@
                                     <h5 class="bnr-para"><?php echo $key['text_2'] ?></h5>
                                     <?php } ?>
                                     <?php if($key['audio']!=NULL){ ?>
-                                    <audio controls>
+                                    <audio controls autoplay>
                                         <source src='<?php echo base_url('assets/audio/'.$key['audio'])?>'
-                                            type="audio/mpeg" duration="infinity">
+                                            type="audio/mpeg">
                                         Your browser does not support the audio element.
                                     </audio>
                                     <?php } ?> 

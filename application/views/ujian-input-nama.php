@@ -64,6 +64,10 @@
                                             Pada ujian ini simaklah audio mengenai wisata kuliner lokal khas Malang
                                             budaya
                                             Indonesia dengan seksama kemudian jawablah soal dengan benar !</h5>
+                                        <audio controls autoplay>
+                                            <source src="assets/audio/INSTRUKSI.mpeg" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                        </audio>
                                         <br>
                                         <h4 class="bnr-para-rectangle">
                                             <i><strong>Directions</strong></i></h4>

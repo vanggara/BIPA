@@ -46,7 +46,7 @@ class Admin extends CI_Controller {
 		if(!isset($_SESSION['login'])){
 			redirect('admin','refresh');
 		}else{
-			$this->db->where('id', $id);
+			$this->db->where('id_user', $id);
 			$this->db->delete('hasil_ujian');
 
 			redirect("hasil_ujian","refresh");

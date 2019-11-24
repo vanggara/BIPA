@@ -67,7 +67,7 @@
                                     <h5 class="bnr-para">Dengarkan Instruksi berikut !</h5>
                                     <audio controls autoplay>
                                         <source src='<?php echo base_url('assets/audio/'.$key['audio_1'])?>'
-                                            type="audio/mpeg" duration="infinity" autoplay>
+                                            type="audio/mpeg" duration="infinity">
                                         Your browser does not support the audio element.
                                     </audio>
                                     <hr>
@@ -81,7 +81,7 @@
                                     <h5 class="bnr-para">Mainkan audio dibawah ini untuk dapat menjawab !</h5>
                                     <audio controls>
                                         <source src='<?php echo base_url('assets/audio/'.$key['audio_2'])?>'
-                                            type="audio/mpeg" duration="infinity">
+                                            type="audio/mpeg">
                                         Your browser does not support the audio element.
                                     </audio>
                                     <?php } ?> 

@@ -181,10 +181,12 @@
             <div class="modal-body">
               <p>Apakah anda yakin ingin menghapus hasil tersebut?</p>
             </div>
+            <?php foreach ($content->result_array() as $key): ?>
             <div class="modal-footer">
-              <a type="button" class="alert alert-info" href='<?php echo base_url() ?>Admin/hapus_hasil/<?php echo $key['id'] ?>'>Ya</a>
+              <a type="button" class="alert alert-info" href='<?php echo base_url() ?>Admin/hapus_hasil/<?php echo $key['id_user'] ?>'>Ya</a>
               <button type="button" class="alert alert-info" data-dismiss="modal">Tidak</button>
             </div>
+            <?php endforeach ?>
           </div>
 
         </div>

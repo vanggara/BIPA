@@ -48,7 +48,7 @@
         <div class="container wow fadeInUp delay-05s">
           <div class="col-md-12 text-center section-padding">
             <h2 class="bnr-sub-title">INFORMASI KULINER MALANG</h2>
-            <h3 class="bnr-para">Bahasa Indonesia Untuk Penutur Asing Level Bipa-2</h3>
+            <h3 class="bnr-para">Wawasan Wisata Kuliner Budaya Indonesia</h3>
           </div>
           <!-- Column -->
           <div class="row">
