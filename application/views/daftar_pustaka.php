@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href=<?php echo base_url('assets/css/cekdomain.css')?>>
     <link rel="stylesheet" type="text/css" href=<?php echo base_url('assets/css/zoom-hover.css')?>>
 
-    <link rel="stylesheet" href=<?php echo base_url('assets/gallery/styles.css')?>>
+    <link rel="stylesheet" href="assets/gallery/styles.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42988408-2"></script>
@@ -39,9 +39,8 @@
                         <nav class="navbar navbar-default navbar-fixed-top">
                             <div class="container">
                                 <div class="navbar-header">
-                                    <a class="navbar-brand" href="home"><img
-                                            src=<?php echo base_url('assets/img/bipa-transparan.png')?> width="200"
-                                            height="50"></a>
+                                    <a class="navbar-brand" href="home"><img src="assets/img/bipa-transparan.png"
+                                            width="200" height="50"></a>
                                 </div>
                             </div>
                         </nav>
@@ -49,51 +48,38 @@
                 </div>
                 <div class="container wow fadeInUp delay-05s">
                     <div class="col-md-12 text-center section-padding">
-                        <h2 class="bnr-sub-title">UJIAN SMART BIPA</h2>
+                        <h2 class="bnr-sub-title">DAFTAR PUSTAKA</h2>
+                        <h3 class="bnr-para">Wawasan Wisata Kuliner Budaya Indonesia</h3>
                     </div>
                     <!-- Column -->
-                    <form method="post" action="<?php echo base_url('CUjian/action_nama_ujian/0')?>">
-                        <div class="row">
-                            <!-- Column -->
-                            <div class="col-md-12">
-                                <div class="card card-hover">
-                                    <div class="box bg-rectangle-brown text-center">
-                                        <h4 class="bnr-para-rectangle">
-                                            <strong>Instruksi</strong></h4>
-                                        <h5 class="bnr-para-rectangle">
-                                            Pada ujian ini simaklah audio mengenai wisata kuliner lokal khas Malang
-                                            budaya
-                                            Indonesia dengan seksama kemudian jawablah soal dengan benar !</h5>
-                                        <audio controls autoplay>
-                                            <source src="assets/audio/INSTRUKSI.mpeg" type="audio/mpeg">
-                                            Your browser does not support the audio element.
-                                        </audio>
+                    <div class="row">
+                        <!-- Column -->
+                        <div class="col-md-12">
+                            <div class="card card-hover">
+                                <div class="box bg-rectangle-brown text-center">
+                                    <h5 class="bnr-para">
+                                        AnekaTempatWisata.com. 2014 - 2018. <i>All rights reserved. All trademarks and
+                                            registered trademarks are the property of their respective owners</i>
                                         <br>
-                                        <h4 class="bnr-para-rectangle">
-                                            <i><strong>Directions</strong></i></h4>
-                                        <h5 class="bnr-para-rectangle">
-                                            <i>In this test, look at the audio about local culinary tourism typical
-                                                of
-                                                Malang, Indonesian culture, carefully, then answer the questions
-                                                correctly!</i></h5>
-                                        <hr>
-                                        <div class="form-group">
-                                            <input required type="text" class="form-control form-control-user"
-                                                name="nama" id="nama" placeholder="Nama Lengkap">
-                                        </div>
-                                        <div class="form-group">
-                                            <input required type="text" class="form-control form-control-user"
-                                                name="asal" id="asal" placeholder="Asal">
-                                        </div>
-                                    </div>
+                                        <br>
+                                        Effendy, Muhadjir. 2017. <i>Kurikulum BIPA Peraturan Mentri Pendidikan Dan
+                                            Kebudayaan Indonesia Tahun 2017.</i> Jakarta : Pusat Pengembangan Strategi
+                                        dan
+                                        Diplomasi Kebahasaan (PPSDK).
+                                        <br>
+                                        <br>
+                                        Sederet.com. 2006-2019. <i>Kamus Bahasa Indonesia - Bahasa Inggris.</i>
+                                        <br>
+                                        <br>
+                                        Sunendar, Dandang. 2016. <i>Bahan Diplomasi Bahasa Indonesia Bagi Penutur Asing
+                                        SAHABATKU INDONESIA untuk Anak Sekolah A2.</i> Jakarta : Pusat Pengembangan Strategi
+                                        dan Diplomasi Kebahasaan (PPSDK).
+                                    </h5>
                                 </div>
                             </div>
-                            <!-- Column -->
                         </div>
-                        <button type="submit" name="login" value="login" class="btn btn-primary btn-user btn-block">
-                            Mulai
-                        </button>
-                    </form>
+                        <!-- Column -->
+                    </div>
                 </div>
         </div>
         </section>

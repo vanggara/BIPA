@@ -65,6 +65,9 @@ $route['action_ujian_nama'] = 'CUjian/action_ujian_nama';
 $route['ujian'] = 'CUjian/ujian';
 $route['selesai'] = 'Clatihan/selesai';
 $route['latihan'] = 'Menu/latihan';
+$route['daftar-pustaka'] = 'Menu/daftar_pustaka';
+$route['materi-ujian'] = 'Menu/materi_ujian';
+$route['materi-latihan'] = 'Menu/materi_latihan';
 
 $route['hasil_ujian'] = 'Admin/hasil_ujian';
 $route['admin'] = 'Admin/admin_login';

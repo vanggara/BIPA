@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SMART BIPA - Bahasa Indonesia Untuk Penutur Asing</title>
   <link rel="shortcut icon" href=<?php echo base_url('assets/img/icon2.ico')?> />
-  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="description" content="Made in Rundeveloper.com">
   <meta name="keywords" content="website desa, jasa pembuatan website jombang, jasa pembuatan website, jasa website, bikin website, buat website, malang, bikin aplikasi malang, jasa website malang, 
     jasa aplikasi malang, jasa pembuatan website malang, kota malang, aplikasi jombang, jombang, software jombang, website jombang, bikin website jombang,
     info jombang, bikin aplikasi jombang">
@@ -48,7 +48,7 @@
         <div class="container wow fadeInUp delay-05s">
           <div class="col-md-12 text-center section-padding">
             <h2 class="bnr-sub-title">Bahasa Indonesia Untuk Penutur Asing Level Bipa-2</h2>
-            <h3 class="bnr-para">Wawasan Wisata Kuliner Budaya Indonesia</h3>
+            <h3 class="bnr-para">WAWASAN WISATA KULINER BUDAYA INDONESIA</h3>
           </div>
           <!-- Column -->
           <div class="row">
@@ -56,7 +56,7 @@
               <div class="card card-hover" onclick="location.href='petunjuk'">
                 <div class="box bg-brown text-center">
                   <h1 class="font-light text-white"><i class="fa fa-question"></i></h1>
-                  <h6 class="text-white">Petunjuk Penggunaan Smart BIPA</h6>
+                  <h6 class="text-white">PETUNJUK PENGGUNAAN SMART BIPA</h6>
                 </div>
               </div>
             </div>
@@ -66,7 +66,7 @@
               <div class="card card-hover" onclick="location.href='kamus'">
                 <div class="box bg-brown text-center">
                   <h1 class="font-light text-white"><i class="fa fa-sort-alpha-asc"></i></h1>
-                  <h6 class="text-white">Kamus</h6>
+                  <h6 class="text-white">KAMUS</h6>
                 </div>
               </div>
             </div>
@@ -77,7 +77,7 @@
               <div class="card card-hover" onclick="location.href='tujuan'">
                 <div class="box bg-brown text-center">
                   <h1 class="font-light text-white"><i class="fa fa-line-chart"></i></h1>
-                  <h6 class="text-white">Tujuan Pembelajaran</h6>
+                  <h6 class="text-white">TUJUAN PEMBELAJARAN</h6>
                 </div>
               </div>
             </div>
@@ -86,7 +86,7 @@
               <div class="card card-hover" onclick="location.href='materi'">
                 <div class="box bg-brown text-center">
                   <h1 class="font-light text-white"><i class="fa fa-book"></i></h1>
-                  <h6 class="text-white">Materi</h6>
+                  <h6 class="text-white">MATERI</h6>
                 </div>
               </div>
             </div>
@@ -100,7 +100,7 @@
               <div class="card card-hover" onclick="location.href='informasi'">
                 <div class="box bg-brown text-center">
                   <h1 class="font-light text-white"><i class="fa fa-info"></i></h1>
-                  <h6 class="text-white">Informasi</h6>
+                  <h6 class="text-white">INFORMASI</h6>
                 </div>
               </div>
             </div>
@@ -110,7 +110,7 @@
               <div class="card card-hover" onclick="location.href='latihan'">
                 <div class="box bg-brown text-center">
                   <h1 class="font-light text-white"><i class="fa fa-pencil"></i></h1>
-                  <h6 class="text-white">Latihan</h6>
+                  <h6 class="text-white">LATIHAN</h6>
                 </div>
               </div>
             </div>
@@ -122,7 +122,7 @@
               <div class="card card-hover" onclick="location.href='ujian-nama'">
                 <div class="box bg-brown text-center">
                   <h1 class="font-light text-white"><i class="fa fa-mortar-board"></i></h1>
-                  <h6 class="text-white">Ujian</h6>
+                  <h6 class="text-white">UJIAN</h6>
                 </div>
               </div>
             </div>
@@ -132,7 +132,7 @@
               <div class="card card-hover" onclick="location.href='tebak-kata'">
                 <div class="box bg-brown text-center">
                   <h1 class="font-light text-white"><i class="fa fa-question"></i></h1>
-                  <h6 class="text-white">Tebak Kata</h6>
+                  <h6 class="text-white">TEBAK KATA</h6>
                 </div>
               </div>
             </div>
@@ -145,17 +145,17 @@
               <div class="card card-hover" onclick="location.href='youtube'">
                 <div class="box bg-brown text-center">
                   <h1 class="font-light text-white"><i class="fa fa-youtube-play"></i></h1>
-                  <h6 class="text-white">Youtube</h6>
+                  <h6 class="text-white">YOUTUBE</h6>
                 </div>
               </div>
             </div>
             <!-- Column -->
             <!-- Column -->
             <div class="col-md-6">
-              <div class="card card-hover" onclick="location.href='daftar_pustaka'">
+              <div class="card card-hover" onclick="location.href='daftar-pustaka'">
                 <div class="box bg-brown text-center">
                   <h1 class="font-light text-white"><i class="fa fa-list"></i></h1>
-                  <h6 class="text-white">Daftar Pustaka</h6>
+                  <h6 class="text-white">DAFTAR PUSTAKA</h6>
                 </div>
               </div>
             </div>
@@ -167,7 +167,7 @@
               <div class="card card-hover" onclick="location.href='profil'">
                 <div class="box bg-brown text-center">
                   <h1 class="font-light text-white"><i class="fa fa-address-card"></i></h1>
-                  <h6 class="text-white">Profil</h6>
+                  <h6 class="text-white">PROFIL</h6>
                 </div>
               </div>
             </div>

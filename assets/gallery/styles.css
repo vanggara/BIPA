@@ -746,20 +746,20 @@ canvas {
 }*/
 /* button Home card */
 .bg-jawab {
-  background-color:rgba(107, 45, 16, 0.9); 
+  background-color:rgba(68, 140, 203, 0.9);
 }
 .bg-brown {
   transition:.25s;
-  background-color:rgba(107, 45, 16, 0.9); 
+  background-color:rgba(68, 140, 203, 0.9);
 }
 .bg-rectangle-brown {
-  background-color:rgba(107, 45, 16, 0.9); 
+  background-color:rgba(68, 140, 203, 0.9);
 }
 .bg-brown:hover {
   transition:.25s;
     cursor: pointer;
     margin:-5px 0 0 0;
-    background-color: #2D0B09;
+    background-color: #1f4a72;
 }
 html body .font-light {
   font-weight: 300; }

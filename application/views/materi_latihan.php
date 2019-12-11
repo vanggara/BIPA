@@ -55,7 +55,6 @@
                 </div>
                 <?php foreach ($content->result_array() as $key): ?>
                 <div class="container wow fadeInUp delay-05s">
-                        <form method="post" action="<?php echo base_url('CUjian/page/'.$key['id']);?>">
                         <!-- Column -->
                         <div class="row">
                             <div class="col-md-12">
@@ -63,58 +62,32 @@
                                 <br>
                                 <br>
                                 <div class="box bg-jawab">
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong><?php echo $key['nomor_ujian']?></strong></h4>
                                     <br>
-                                    <?php if( $key['text_1'] != NULL){?>
-                                    <h5 class="bnr-para"><?php echo $key['text_1'] ?></h5>
+                                    <?php if( $key['nama_gambar'] != NULL){?>
+                                    <h4 class="bnr-para"><?php echo $key['nama_gambar'] ?></h4>
                                     <?php } ?>
                                     <?php if( $key['gambar'] != NULL){?>
                                     <div>
                                         <img class="gambar" src="<?php echo base_url($key['gambar'])?>" alt="">
                                     </div>
                                     <?php } ?>
+                                    <?php if( $key['id']>=11){?>
+                                    <h4 class="bnr-para"><?php echo $key['text_1'] ?></h4>
+                                    <?php } ?>
                                     <?php if( $key['text_2'] != NULL){?>
                                     <h5 class="bnr-para"><?php echo $key['text_2'] ?></h5>
                                     <?php } ?>
                                     <?php if($key['audio']!=NULL){ ?>
-                                    <audio controls autoplay>
+                                    <audio controls>
                                         <source src='<?php echo base_url('assets/audio/'.$key['audio'])?>'
                                             type="audio/mpeg">
                                         Your browser does not support the audio element.
                                     </audio>
                                     <?php } ?> 
                                     <br>
-                                    <h4 class="bnr-para"><?php echo $key['pertanyaan'] ?></h4>
-                                    <?php if($key['id']>=21){ ?>
-                                    <div class="form-group">
-                                        <input required type="text" class="form-control form-control-user" name="jawaban"
-                                            id="jawaban" placeholder="Jawaban">
-                                    </div>
-                                    <?php }else{ ?>
-                                    <div class="card card-hover">
-                                        <label class="radio"><input type="radio" id="jawaban" name="jawaban"
-                                                value='<?php echo $key['a'] ?>' required>
-                                            <?php echo $key['a'] ?></label>
-                                        <label class="radio"><input type="radio" id="jawaban" name="jawaban"
-                                                value='<?php echo $key['b'] ?>' required>
-                                            <?php echo $key['b'] ?></label>
-                                        <label class="radio"><input type="radio" id="jawaban" name="jawaban"
-                                                value='<?php echo $key['c'] ?>' required>
-                                            <?php echo $key['c'] ?></label>
-                                        <label class="radio"><input type="radio" id="jawaban" name="jawaban"
-                                                value='<?php echo $key['d'] ?>' required>
-                                            <?php echo $key['d'] ?></label>
-                                    </div>
-                                    <?php } ?>
-                                        <button type="submit" name="submit" value="submit"
-                                            class="btn btn-danger btn-user btn-block">
-                                            Kirim Jawaban
-                                        </button>
                                 </div>
                             </div>
                         </div>
-                    </form>
                 </div>
             </section>
             <?php endforeach ?>

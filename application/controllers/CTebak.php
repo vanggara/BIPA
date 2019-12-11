@@ -9,7 +9,7 @@ class CTebak extends CI_Controller {
 		if($cek_jawaban->num_rows() > 0 ){
                     $kunci =  $this->db->query('SELECT kunci AS knc from tebak_kata where id = "'.$id.'"')->row()->knc;
                     if(isset($_POST['jawaban'])){
-                        if($kunci==$_POST['jawaban']){
+                        if(strcasecmp($kunci,$_POST['jawaban']) == 0){
                             $status = "1";
                         }else{
                             $status = "0";
@@ -29,7 +29,7 @@ class CTebak extends CI_Controller {
             $max = $this->db->query('SELECT MAX(id) AS maxid FROM tebak_kata')->row()->maxid;
                 if(isset($_POST['jawaban'])&&$id!=$max){
                     $kunci =  $this->db->query('SELECT kunci AS knc from tebak_kata where id = "'.$id.'"')->row()->knc;
-                    if($kunci==$_POST['jawaban']){
+                    if(strcasecmp($kunci,$_POST['jawaban']) == 0){
                         $status = "1";
                     }else{
                         $status = "0";
@@ -46,7 +46,7 @@ class CTebak extends CI_Controller {
                     $this->load->view('tebak_kata', $data);
                 }else if($id==$max){      
                     $kunci =  $this->db->query('SELECT kunci AS knc from tebak_kata where id = "'.$id.'"')->row()->knc;
-                    if($kunci==$_POST['jawaban']){
+                    if(strcasecmp($kunci,$_POST['jawaban']) == 0){
                         $status = "1";
                     }else{
                         $status = "0";

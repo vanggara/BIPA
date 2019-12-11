@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BIPA - Bahasa Indonesia Untuk Penutur Asing</title>
     <link rel="shortcut icon" href=<?php echo base_url('assets/img/icon2.ico')?> />
-    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+    <meta name="description" content="Made in Rundeveloper.com">
     <meta name="keywords" content="website desa, jasa pembuatan website jombang, jasa pembuatan website, jasa website, bikin website, buat website, malang, bikin aplikasi malang, jasa website malang, 
     jasa aplikasi malang, jasa pembuatan website malang, kota malang, aplikasi jombang, jombang, software jombang, website jombang, bikin website jombang,
     info jombang, bikin aplikasi jombang">
@@ -86,13 +86,10 @@
                                     </audio>
                                     <?php } ?> 
                                     <br>
-                                    <div class="card card-hover">
-                                        <label class="radio"><input type="radio" id="jawaban" name="jawaban"
-                                                value='<?php echo $key['a'] ?>' required>
-                                            <?php echo $key['a'] ?></label>
-                                        <label class="radio"><input type="radio" id="jawaban" name="jawaban"
-                                                value='<?php echo $key['b'] ?>' required>
-                                            <?php echo $key['b'] ?></label>
+                                    <br>
+                                    <div class="form-group">
+                                        <input required type="text" class="form-control form-control-user" name="jawaban"
+                                            id="jawaban" placeholder="Jawaban">
                                     </div>
                                         <button type="submit" name="submit" value="submit"
                                             class="btn btn-primary btn-user btn-block">

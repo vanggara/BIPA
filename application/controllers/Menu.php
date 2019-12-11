@@ -70,5 +70,19 @@ class Menu extends CI_Controller {
 	{
 		$this->load->view('tebak_kata_awal');
 	  }
+
+ 	public function materi_ujian()
+	{
+		$this->load->view('list_materi_ujian');
+	}
 	
+	public function materi_latihan()
+	{
+		$this->load->view('list_materi_latihan');
+	}
+
+	public function daftar_pustaka()
+	{
+		$this->load->view('daftar_pustaka');
+	}
 }

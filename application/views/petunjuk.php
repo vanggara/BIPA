@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BIPA - Bahasa Indonesia Untuk Penutur Asing</title>
     <link rel="shortcut icon" href=<?php echo base_url('assets/img/icon2.ico')?> />
-    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+    <meta name="description" content="Made in Rundeveloper.com">
     <meta name="keywords" content="website desa, jasa pembuatan website jombang, jasa pembuatan website, jasa website, bikin website, buat website, malang, bikin aplikasi malang, jasa website malang, 
     jasa aplikasi malang, jasa pembuatan website malang, kota malang, aplikasi jombang, jombang, software jombang, website jombang, bikin website jombang,
     info jombang, bikin aplikasi jombang">
@@ -60,124 +60,134 @@
                                     <?php foreach ($content->result_array() as $key): ?>
                                     <h4 class="bnr-para-rectangle">
                                         <strong>Petunjuk Penggunaan</strong></h4>
+                                    <h4 class="bnr-para-rectangle">
+                                        <strong>(Usage Instructions)</strong></h4>
                                     <h5 class="bnr-para-rectangle">
                                         Berisi tentang petunjuk penggunaan website bahan ajar “SMART BIPA”</h5>
+                                    <h5 class="bnr-para-rectangle">
+                                        (Contains instructions for using the "SMART BIPA" teaching materials
+                                            website)</h5>
+                                    <br>
                                     <h4 class="bnr-para-rectangle">
                                         <strong>Tujuan Pembelajaran </strong></h4>
+                                    <h4 class="bnr-para-rectangle">
+                                        <strong>(Learning Objectives)</strong></h4>
                                     <h5 class="bnr-para-rectangle">
                                         Berisi tentang tujuan pembelajaran yang terdapat pada website bahan ajar “SMART
                                         BIPA”</h5>
+                                    <h5 class="bnr-para-rectangle">
+                                        (Contains the learning objectives contained on the teaching material website
+                                            "SMART BIPA")</h5>
+                                    <br>
                                     <h4 class="bnr-para-rectangle">
                                         <strong>Informasi</strong></h4>
+                                    <h4 class="bnr-para-rectangle">
+                                        <strong>(Information)</strong></h4>
                                     <h5 class="bnr-para-rectangle">
                                         Berisi tentang lokasi lokasi wisata kuliner budaya Indonesia dilengkapi dengan
                                         google maps.</h5>
+                                    <h5 class="bnr-para-rectangle">
+                                        (Contains locations of culinary tourism locations in Indonesia equipped with
+                                            google maps.)</h5>
+                                    <br>
                                     <h4 class="bnr-para-rectangle">
                                         <strong>Kamus</strong></h4>
+                                    <h4 class="bnr-para-rectangle">
+                                        <strong>(Dictionary)</strong></h4>
                                     <h5 class="bnr-para-rectangle">
                                         Kamus bahasa indonesia ke bahasa inggris, kamus bahasa inggris ke Indonesia,
                                         kamus bahasa Inggris ke Inggris yang dapat di akses oleh pembelajar untuk
                                         menemukan makna kata sulit dalam materi,latihan dan ujian.</h5>
+                                    <h5 class="bnr-para-rectangle">
+                                        (Indonesian to English dictionary, English to Indonesian dictionary, English
+                                            to English dictionary that can be accessed by learners to find the meaning
+                                            of difficult words in materials, exercises and examinations.)</h5>
+                                    <br>
                                     <h4 class="bnr-para-rectangle">
                                         <strong>Materi </strong></h4>
+                                    <h4 class="bnr-para-rectangle">
+                                        <strong>(Materials)</strong></h4>
                                     <h5 class="bnr-para-rectangle">
                                         Berisi tentang materi berupa dialog dan penjelasan mengenai wisata kuliner
                                         budaya Indonesia beserta contohnya.</h5>
+                                    <h5 class="bnr-para-rectangle">
+                                        (Contains material in the form of dialogue and an explanation of Indonesian
+                                            cultural culinary tourism along with examples.)</h5>
+                                    <br>
                                     <h4 class="bnr-para-rectangle">
                                         <strong>Latihan </strong></h4>
+                                    <h4 class="bnr-para-rectangle">
+                                        <strong>(Excercise) </strong></h4>
                                     <h5 class="bnr-para-rectangle">
                                         Berisi latihan keterampilan menyimak intensif berupa audio dan gambar tentang
                                         wisata kuliner budaya Indonesia disertai dengan kosakata yang terdapat pada soal
                                         latihan yang diperdengarkan. Pembelajar diminta untuk menjawab soal pilihan
                                         ganda dan essai dari soal latihan yang diperdengarkan.</h5>
+                                    <h5 class="bnr-para-rectangle">
+                                        (Contains intensive listening skills in the form of audio and images about
+                                            culinary tourism in Indonesian culture accompanied by vocabulary contained
+                                            in the practice questions that are played. Learners are asked to answer
+                                            multiple choice questions and essays from practice questions that are
+                                            played.)</h5>
+                                    <br>
                                     <h4 class="bnr-para-rectangle">
                                         <strong>Ujian </strong></h4>
+                                    <h4 class="bnr-para-rectangle">
+                                        <strong>(Test)</strong></h4>
                                     <h5 class="bnr-para-rectangle">
                                         Berisi ujian/tes keterampilan menyimak berupa audio dan gambar tentang wisata
                                         kuliner yang ada di Indonesiadisertai dengan kosakata yang terdapat pada soal
                                         ujian yang diperdengarkan.</h5>
+                                    <h5 class="bnr-para-rectangle">
+                                        (Contains examination / listening skills tests in the form of audio and
+                                            pictures about culinary tourism in Indonesia along with the vocabulary
+                                            contained in the exam questions that are played.)</h5>
+                                    <br>
                                     <h4 class="bnr-para-rectangle">
                                         <strong>Tebak Kata </strong></h4>
+                                    <h4 class="bnr-para-rectangle">
+                                        <strong>(Guess the Word)</strong></h4>
                                     <h5 class="bnr-para-rectangle">
                                         Berisi tentang wisata kuliner Indonesia dari 33 Provinsi disertai dengan gambar
                                         dan audio untuk di diperdengarkan kepada pengguna bahan ajar “SMART BIPA”
                                         kemudian pengguna di minta untuk menebak kata yang ada dalam audio.</h5>
+                                    <h5 class="bnr-para-rectangle">
+                                        (Contains Indonesian culinary tourism from 33 provinces accompanied by
+                                            pictures and audio to be played with users of the teaching material "SMART
+                                            BIPA" then the user is asked to guess the words in the audio.)</h5>
+                                    <br>
                                     <h4 class="bnr-para-rectangle">
                                         <strong>Youtube </strong></h4>
+                                    <h4 class="bnr-para-rectangle">
+                                        <strong>(Youtube) </strong></h4>
                                     <h5 class="bnr-para-rectangle">
                                         Situs youtube yang dapat diakses oleh pengguna website “SMART BIPA” untuk
                                         melihat wisata kuliner yang ada di Indonesia.</h5>
+                                    <h5 class="bnr-para-rectangle">
+                                        (Youtube site that can be accessed by users of the website "SMART BIPA" to see
+                                            culinary tours in Indonesia.)</h5>
+                                    <br>
                                     <h4 class="bnr-para-rectangle">
                                         <strong>Daftar Pustaka </strong></h4>
+                                    <h4 class="bnr-para-rectangle">
+                                        <strong>(Bibliography)</strong></h4>
                                     <h5 class="bnr-para-rectangle">
                                         Berisi tentang sumber belajar yang digunakan pada materi, latijan dan ujian.
                                     </h5>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>Profil </strong></h4>
                                     <h5 class="bnr-para-rectangle">
-                                        Berisi profil penulis atau pengembang bahan ajar website “SMART BIPA”.</h5>
+                                        (Contains the learning resources used in the material, exercises and
+                                            examinations.)</h5>
                                     <br>
                                     <h4 class="bnr-para-rectangle">
-                                        <i><strong>Usage Instructions</strong></i></h4>
-                                    <h5 class="bnr-para-rectangle">
-                                        <i>Contains instructions for using the "SMART BIPA" teaching materials
-                                            website</i></h5>
+                                        <strong>Profil </strong></h4>
                                     <h4 class="bnr-para-rectangle">
-                                        <i><strong>Learning Objectives</strong></i></h4>
+                                        <strong>(Profile) </strong></h4>
                                     <h5 class="bnr-para-rectangle">
-                                        <i>Contains the learning objectives contained on the teaching material website
-                                            "SMART BIPA"</i></h5>
-                                    <h4 class="bnr-para-rectangle">
-                                        <i><strong>Information</strong></i></h4>
+                                        Berisi profil penulis atau pengembang bahan ajar website “SMART BIPA”.</h5>
                                     <h5 class="bnr-para-rectangle">
-                                        <i>Contains locations of culinary tourism locations in Indonesia equipped with
-                                            google maps.</i></h5>
-                                    <h4 class="bnr-para-rectangle">
-                                        <i><strong>Dictionary</strong></i></h4>
-                                    <h5 class="bnr-para-rectangle">
-                                        <i>Indonesian to English dictionary, English to Indonesian dictionary, English
-                                            to English dictionary that can be accessed by learners to find the meaning
-                                            of difficult words in materials, exercises and examinations.</i></h5>
-                                    <h4 class="bnr-para-rectangle">
-                                        <i><strong>Materials</strong></i></h4>
-                                    <h5 class="bnr-para-rectangle">
-                                        <i>Contains material in the form of dialogue and an explanation of Indonesian
-                                            cultural culinary tourism along with examples.</i></h5>
-                                    <h4 class="bnr-para-rectangle">
-                                        <i><strong>Exereise </strong></i></h4>
-                                    <h5 class="bnr-para-rectangle">
-                                        <i>Contains intensive listening skills in the form of audio and images about
-                                            culinary tourism in Indonesian culture accompanied by vocabulary contained
-                                            in the practice questions that are played. Learners are asked to answer
-                                            multiple choice questions and essays from practice questions that are
-                                            played</i></h5>
-                                    <h4 class="bnr-para-rectangle">
-                                        <i><strong>Test</strong></i></h4>
-                                    <h5 class="bnr-para-rectangle">
-                                        <i>Contains examination / listening skills tests in the form of audio and
-                                            pictures about culinary tourism in Indonesia along with the vocabulary
-                                            contained in the exam questions that are played.</i></h5>
-                                    <h4 class="bnr-para-rectangle">
-                                        <i><strong>Guess the Word</strong></i></h4>
-                                    <h5 class="bnr-para-rectangle">
-                                        <i>Contains Indonesian culinary tourism from 33 provinces accompanied by
-                                            pictures and audio to be played with users of the teaching material "SMART
-                                            BIPA" then the user is asked to guess the words in the audio</i></h5>
-                                    <h4 class="bnr-para-rectangle">
-                                        <i><strong>Youtube </strong></i></h4>
-                                    <h5 class="bnr-para-rectangle">
-                                        <i>Youtube site that can be accessed by users of the website "SMART BIPA" to see
-                                            culinary tours in Indonesia.</i></h5>
-                                    <h4 class="bnr-para-rectangle">
-                                        <i><strong>Bibliography</strong></i></h4>
-                                    <h5 class="bnr-para-rectangle">
-                                        <i>Contains the learning resources used in the material, exercises and
-                                            examinations.</i></h5>
-                                    <h4 class="bnr-para-rectangle">
-                                        <i><strong>Profile </strong></i></h4>
-                                    <h5 class="bnr-para-rectangle">
-                                        <i>Contains the profile of the author or developer of teaching materials on the
-                                            website "SMART BIPA".</i></h5>
+                                        (Contains the profile of the author or developer of teaching materials on the
+                                            website "SMART BIPA".)</h5>
+                                    <br>
                                     <?php endforeach ?>
                                 </div>
                             </div>

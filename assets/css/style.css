@@ -154,7 +154,7 @@ HEADER
 ***********************************/
 
 .header {
-  background: url('../img/food.jpeg') no-repeat fixed;
+  background: url('../img/food3.jpg') no-repeat fixed;
   background-size: cover;
   position: relative;
   height: fit-content;
@@ -266,6 +266,7 @@ h2.bnr-sub-title {
   width: 100%;
   border-radius: 2px;
   padding: 10px;
+  max-width: 500px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;

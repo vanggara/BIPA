@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href=<?php echo base_url('assets/css/cekdomain.css')?>>
     <link rel="stylesheet" type="text/css" href=<?php echo base_url('assets/css/zoom-hover.css')?>>
 
-    <link rel="stylesheet" href=<?php echo base_url('assets/gallery/styles.css')?>>
+    <link rel="stylesheet" href="assets/gallery/styles.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42988408-2"></script>
@@ -39,9 +39,8 @@
                         <nav class="navbar navbar-default navbar-fixed-top">
                             <div class="container">
                                 <div class="navbar-header">
-                                    <a class="navbar-brand" href="home"><img
-                                            src=<?php echo base_url('assets/img/bipa-transparan.png')?> width="200"
-                                            height="50"></a>
+                                    <a class="navbar-brand" href="home"><img src="assets/img/bipa-transparan.png"
+                                            width="200" height="50"></a>
                                 </div>
                             </div>
                         </nav>
@@ -49,65 +48,50 @@
                 </div>
                 <div class="container wow fadeInUp delay-05s">
                     <div class="col-md-12 text-center section-padding">
-                        <h2 class="bnr-sub-title">UJIAN SMART BIPA</h2>
-                    </div>
-                    <!-- Column -->
-                    <form method="post" action="<?php echo base_url('CUjian/action_nama_ujian/0')?>">
+                        <h2 class="bnr-sub-title">MATERI UJIAN</h2>
+                        <h3 class="bnr-para">Wawasan Wisata Kuliner Budaya Indonesia</h3>
+                        <!-- Column -->
                         <div class="row">
-                            <!-- Column -->
                             <div class="col-md-12">
-                                <div class="card card-hover">
-                                    <div class="box bg-rectangle-brown text-center">
-                                        <h4 class="bnr-para-rectangle">
-                                            <strong>Instruksi</strong></h4>
-                                        <h5 class="bnr-para-rectangle">
-                                            Pada ujian ini simaklah audio mengenai wisata kuliner lokal khas Malang
-                                            budaya
-                                            Indonesia dengan seksama kemudian jawablah soal dengan benar !</h5>
-                                        <audio controls autoplay>
-                                            <source src="assets/audio/INSTRUKSI.mpeg" type="audio/mpeg">
-                                            Your browser does not support the audio element.
-                                        </audio>
-                                        <br>
-                                        <h4 class="bnr-para-rectangle">
-                                            <i><strong>Directions</strong></i></h4>
-                                        <h5 class="bnr-para-rectangle">
-                                            <i>In this test, look at the audio about local culinary tourism typical
-                                                of
-                                                Malang, Indonesian culture, carefully, then answer the questions
-                                                correctly!</i></h5>
-                                        <hr>
-                                        <div class="form-group">
-                                            <input required type="text" class="form-control form-control-user"
-                                                name="nama" id="nama" placeholder="Nama Lengkap">
-                                        </div>
-                                        <div class="form-group">
-                                            <input required type="text" class="form-control form-control-user"
-                                                name="asal" id="asal" placeholder="Asal">
-                                        </div>
+                                <div class="card card-hover" onclick="location.href='CMateri/latihan/1'">
+                                    <div class="box bg-brown text-center">
+                                        <h3 class="text-white">POS KETAN LEGENDA</h3>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Column -->
                         </div>
-                        <button type="submit" name="login" value="login" class="btn btn-primary btn-user btn-block">
-                            Mulai
-                        </button>
-                    </form>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card card-hover" onclick="location.href='CMateri/latihan/6'">
+                                    <div class="box bg-brown text-center">
+                                        <h3 class="text-white">OREM-OREM KHAS AREMA</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card card-hover" onclick="location.href='CMateri/latihan/11'">
+                                    <div class="box bg-brown text-center">
+                                        <h3 class="text-white">WARUNG MAKAN</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </section>
         </div>
-        </section>
-    </div>
-    <!---->
-    <!---->
-    <footer id="footer">
-        <div class="container">
-            <div class="row text-center">
-                <p> <?php echo date("Y"); ?> &copy; Rundeveloper. All Rights Reserved.</p>
+        <!---->
+        <!---->
+        <footer id="footer">
+            <div class="container">
+                <div class="row text-center">
+                    <p> <?php echo date("Y"); ?> &copy; Rundeveloper. All Rights Reserved.</p>
+                </div>
             </div>
-        </div>
-    </footer>
-    <!---->
+        </footer>
+        <!---->
     </div>
     <script src=<?php echo base_url('assets/js/jquery.min.js')?>></script>
     <script src=<?php echo base_url('assets/js/jquery.easing.min.js')?>></script>
