@@ -154,7 +154,7 @@ HEADER
 ***********************************/
 
 .header {
-  background: url('../img/food3.jpg') no-repeat fixed;
+  background: url('../img/food4.png') no-repeat fixed;
   background-size: cover;
   position: relative;
   height: fit-content;
@@ -244,7 +244,7 @@ HEADER
 
 .bnr-title,
 .bnr-sub-title {
-  text-shadow: -2px 2px 2px #000;
+  text-shadow: -2px 2px 2px rgb(0, 0, 0);
   font-family: 'Fira Sans', sans-serif;
 }
 
@@ -275,11 +275,11 @@ h2.bnr-sub-title {
 
 .bnr-para {
   font-weight: 300;
-  text-shadow: -2px 2px 2px #000;
+  text-shadow: -2px 2px 2px rgb(0, 0, 0);
 }
 .bnr-para-rectangle {
   font-weight: 300;
-  text-shadow: -2px 2px 2px #000;
+  text-shadow: -2px 2px 2px rgb(0, 0, 0);
   text-align: justify;
 }
 

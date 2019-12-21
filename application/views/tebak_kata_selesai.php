@@ -50,14 +50,14 @@
                 <div class="container wow fadeInUp delay-05s">
                     <div class="col-md-12 text-center section-padding">
                         <?php if($score <= 5){ ?>
-                            <h3 class="bnr-para-rectangle">Selamat, Anda mendapatkan Trophy Bronze !</h3>
-                            <h3 class="bnr-para-rectangle" color="red">Score anda : <?php echo $score ?></h3>
+                            <h3 class="bnr-para-rectangle text-black">Selamat, Anda mendapatkan Trophy Bronze !</h3>
+                            <h3 class="bnr-para-rectangle text-black" color="red">Score anda : <?php echo $score ?></h3>
                         <?php }else if($score >= 6 && $score <= 10){ ?>
-                            <h3 class="bnr-para-rectangle">Selamat, Anda mendapatkan Trophy Silver !</h3>
-                            <h3 class="bnr-para-rectangle" color="red">Score anda : <?php echo $score ?></h3>
+                            <h3 class="bnr-para-rectangle text-black">Selamat, Anda mendapatkan Trophy Silver !</h3>
+                            <h3 class="bnr-para-rectangle text-black" color="red">Score anda : <?php echo $score ?></h3>
                         <?php } else if($score >= 11){?>
-                            <h3 class="bnr-para-rectangle">Selamat, Anda mendapatkan Trophy Gold !</h3>
-                            <h3 class="bnr-para-rectangle" color="red">Score anda : <?php echo $score ?></h3>
+                            <h3 class="bnr-para-rectangle text-black">Selamat, Anda mendapatkan Trophy Gold !</h3>
+                            <h3 class="bnr-para-rectangle text-black" color="red">Score anda : <?php echo $score ?></h3>
                         <?php }?>
                     </div>
                     <!-- Column -->

@@ -19,7 +19,7 @@
         .preload {
             width: 100%;
             height: 100%;
-            background-image: url("assets/img/food.jpeg");
+            background-image: url("assets/img/food4.png");
             /* background: #85612c; */
             position: fixed;
             top: 0;

@@ -49,13 +49,13 @@
                 <div class="container wow fadeInUp delay-05s">
                     <div class="col-md-12 text-center section-padding">
                         <h2 class="bnr-sub-title">MATERI UJIAN</h2>
-                        <h3 class="bnr-para">Wawasan Wisata Kuliner Budaya Indonesia</h3>
+                        <h3 class="bnr-para">WAWASAN WISATA KULINER BUDAYA INDONESIA</h3>
                         <!-- Column -->
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card card-hover" onclick="location.href='CMateri/latihan/1'">
                                     <div class="box bg-brown text-center">
-                                        <h3 class="text-white">POS KETAN LEGENDA</h3>
+                                        <h3 class="text-white">Pos Ketan Legenda</h3>
                                     </div>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@
                             <div class="col-md-12">
                                 <div class="card card-hover" onclick="location.href='CMateri/latihan/6'">
                                     <div class="box bg-brown text-center">
-                                        <h3 class="text-white">OREM-OREM KHAS AREMA</h3>
+                                        <h3 class="text-white">Orem-Orem Khas Arema</h3>
                                     </div>
                                 </div>
                             </div>
@@ -73,7 +73,7 @@
                             <div class="col-md-12">
                                 <div class="card card-hover" onclick="location.href='CMateri/latihan/11'">
                                     <div class="box bg-brown text-center">
-                                        <h3 class="text-white">WARUNG MAKAN</h3>
+                                        <h3 class="text-white">Warung Makan</h3>
                                     </div>
                                 </div>
                             </div>

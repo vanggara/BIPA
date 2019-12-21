@@ -49,12 +49,15 @@
                 </div>
                 <div class="container wow fadeInUp delay-05s">
                     <div class="col-md-12 text-center section-padding">
+                        <br>
+                        <br>
+                        <br>
                         <?php if($score < 70){ ?>
-                        <h3 class="bnr-para-rectangle">Sayang sekali, Anda belum berhasil menyelesaikan pelajaran ini !</h3>
+                        <h3 class="bnr-para-rectangle text-black">Sayang sekali, Anda belum berhasil menyelesaikan pelajaran ini !</h3>
                         <?php }else{ ?>
-                        <h3 class="bnr-para-rectangle">Wow, Anda berhasil menyelesaikan pelajaran ini !</h3>
+                        <h3 class="bnr-para-rectangle text-black">Wow, Anda berhasil menyelesaikan pelajaran ini !</h3>
                         <?php } ?>
-                        <h3 class="bnr-para-rectangle" color="red">Score anda : <?php echo $score ?></h3>
+                        <h3 class="bnr-para-rectangle text-black" color="red">Score anda : <?php echo $score ?></h3>
                     </div>
                     <!-- Column -->
                     <div class="col-md-12">

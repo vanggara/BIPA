@@ -49,13 +49,13 @@
                 <div class="container wow fadeInUp delay-05s">
                     <div class="col-md-12 text-center section-padding">
                         <h2 class="bnr-sub-title">MATERI UJIAN</h2>
-                        <h3 class="bnr-para">Wawasan Wisata Kuliner Budaya Indonesia</h3>
+                        <h3 class="bnr-para">WAWASAN WISATA KULINER BUDAYA INDONESIA</h3>
                         <!-- Column -->
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card card-hover" onclick="location.href='CMateri/page/1'">
                                     <div class="box bg-brown text-center">
-                                        <h3 class="text-white">BAKSO PRESIDEN MALANG</h3>
+                                        <h3 class="text-white">Bakso Presiden Malang</h3>
                                     </div>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@
                             <div class="col-md-12">
                                 <div class="card card-hover" onclick="location.href='CMateri/page/21'">
                                     <div class="box bg-brown text-center">
-                                        <h3 class="text-white">BELI BAKSO</h3>
+                                        <h3 class="text-white">Beli Bakso</h3>
                                     </div>
                                 </div>
                             </div>
@@ -73,7 +73,7 @@
                             <div class="col-md-12">
                                 <div class="card card-hover" onclick="location.href='CMateri/page/6'">
                                     <div class="box bg-brown text-center">
-                                        <h3 class="text-white">MIE GAJAHMADA</h3>
+                                        <h3 class="text-white">Mie Gajah Mada</h3>
                                     </div>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@
                             <div class="col-md-12">
                                 <div class="card card-hover" onclick="location.href='CMateri/page/11'">
                                     <div class="box bg-brown text-center">
-                                        <h3 class="text-white">PECEL KAWI</h3>
+                                        <h3 class="text-white">Pecel Kawi</h3>
                                     </div>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@
                             <div class="col-md-12">
                                 <div class="card card-hover" onclick="location.href='CMateri/page/16'">
                                     <div class="box bg-brown text-center">
-                                        <h3 class="text-white">PUTU LANANG CELAKET</h3>
+                                        <h3 class="text-white">Putu Lanang Celaket</h3>
                                     </div>
                                 </div>
                             </div>

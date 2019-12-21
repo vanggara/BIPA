@@ -49,7 +49,7 @@
                 </div>
                 <div class="container wow fadeInUp delay-05s">
                     <div class="col-md-12 text-center section-padding">
-                        <h2 class="bnr-sub-title">PETUNJUK PENGGUNAAN WEBSITE SMART BIPA</h2>
+                        <h3 class="bnr-sub-title">PETUNJUK PENGGUNAAN WEBSITE</h3>
                     </div>
                     <!-- Column -->
                     <div class="row">
@@ -58,159 +58,136 @@
                             <div class="card card-hover">
                                 <div class="box bg-rectangle-brown text-center">
                                     <?php foreach ($content->result_array() as $key): ?>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>Petunjuk Penggunaan</strong></h4>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>(Usage Instructions)</strong></h4>
-                                    <h5 class="bnr-para-rectangle">
-                                        Berisi tentang petunjuk penggunaan website bahan ajar “SMART BIPA”</h5>
-                                    <h5 class="bnr-para-rectangle">
-                                        (Contains instructions for using the "SMART BIPA" teaching materials
-                                            website)</h5>
+                                    <h4 class="bnr-para-rectangle" style="font-size:16px;">
+                                        <strong>Petunjuk Penggunaan</strong> : Berisi tentang petunjuk penggunaan
+                                        website bahan ajar “SMART BIPA”</h4>
+                                    <h4 class="bnr-para-rectangle" style="font-size:16px;">
+                                        <strong>(Usage Instructions</strong> : <i>Contains instructions for using the
+                                            "SMART BIPA" teaching materials
+                                            website.</i>)</h4>
                                     <br>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>Tujuan Pembelajaran </strong></h4>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>(Learning Objectives)</strong></h4>
-                                    <h5 class="bnr-para-rectangle">
-                                        Berisi tentang tujuan pembelajaran yang terdapat pada website bahan ajar “SMART
-                                        BIPA”</h5>
-                                    <h5 class="bnr-para-rectangle">
-                                        (Contains the learning objectives contained on the teaching material website
-                                            "SMART BIPA")</h5>
+                                    <h4 class="bnr-para-rectangle" style="font-size:16px;">
+                                        <strong>Tujuan Pembelajaran</strong> : Berisi tentang tujuan pembelajaran yang
+                                        terdapat pada website bahan ajar “SMART
+                                        BIPA”</h4>
+                                    <h4 class="bnr-para-rectangle" style="font-size:16px;">
+                                        <strong>(Learning Objectives</strong> : <i>Contains the learning objectives
+                                            contained on the teaching material website
+                                            "SMART BIPA"</i>.)</h4>
                                     <br>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>Informasi</strong></h4>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>(Information)</strong></h4>
-                                    <h5 class="bnr-para-rectangle">
-                                        Berisi tentang lokasi lokasi wisata kuliner budaya Indonesia dilengkapi dengan
-                                        google maps.</h5>
-                                    <h5 class="bnr-para-rectangle">
-                                        (Contains locations of culinary tourism locations in Indonesia equipped with
-                                            google maps.)</h5>
+                                    <h4 class="bnr-para-rectangle" style="font-size:16px;">
+                                        <strong>Informasi</strong> : Berisi tentang lokasi lokasi wisata kuliner budaya
+                                        Indonesia dilengkapi dengan
+                                        google maps.</h4>
+                                    <h4 class="bnr-para-rectangle" style="font-size:16px;">
+                                        <strong>(Information</strong> : <i>Contains locations of culinary tourism
+                                            locations in Indonesia equipped with
+                                            google maps.</i>)</h4>
                                     <br>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>Kamus</strong></h4>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>(Dictionary)</strong></h4>
-                                    <h5 class="bnr-para-rectangle">
-                                        Kamus bahasa indonesia ke bahasa inggris, kamus bahasa inggris ke Indonesia,
+                                    <h4 class="bnr-para-rectangle" style="font-size:16px;">
+                                        <strong>Kamus</strong> : Kamus bahasa indonesia ke bahasa inggris, kamus bahasa
+                                        inggris ke Indonesia,
                                         kamus bahasa Inggris ke Inggris yang dapat di akses oleh pembelajar untuk
-                                        menemukan makna kata sulit dalam materi,latihan dan ujian.</h5>
-                                    <h5 class="bnr-para-rectangle">
-                                        (Indonesian to English dictionary, English to Indonesian dictionary, English
+                                        menemukan makna kata sulit dalam materi,latihan dan ujian.</h4>
+                                    <h4 class="bnr-para-rectangle" style="font-size:16px;">
+                                        <strong>(Dictionary</strong> : <i>Indonesian to English dictionary, English to
+                                            Indonesian dictionary, English
                                             to English dictionary that can be accessed by learners to find the meaning
-                                            of difficult words in materials, exercises and examinations.)</h5>
+                                            of difficult words in materials, exercises and examinations.</i>)</h4>
                                     <br>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>Materi </strong></h4>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>(Materials)</strong></h4>
-                                    <h5 class="bnr-para-rectangle">
-                                        Berisi tentang materi berupa dialog dan penjelasan mengenai wisata kuliner
-                                        budaya Indonesia beserta contohnya.</h5>
-                                    <h5 class="bnr-para-rectangle">
-                                        (Contains material in the form of dialogue and an explanation of Indonesian
-                                            cultural culinary tourism along with examples.)</h5>
+                                    <h4 class="bnr-para-rectangle" style="font-size:16px;">
+                                        <strong>Materi</strong> : Berisi tentang materi berupa dialog dan penjelasan
+                                        mengenai wisata kuliner
+                                        budaya Indonesia beserta contohnya.</h4>
+                                    <h4 class="bnr-para-rectangle" style="font-size:16px;">
+                                        <strong>(Materials</strong> : <i>Contains material in the form of dialogue and
+                                            an explanation of Indonesian
+                                            cultural culinary tourism along with examples.</i>)</h4>
                                     <br>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>Latihan </strong></h4>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>(Excercise) </strong></h4>
-                                    <h5 class="bnr-para-rectangle">
-                                        Berisi latihan keterampilan menyimak intensif berupa audio dan gambar tentang
+                                    <h4 class="bnr-para-rectangle" style="font-size:16px;">
+                                        <strong>Latihan</strong> : Berisi latihan keterampilan menyimak intensif berupa
+                                        audio dan gambar tentang
                                         wisata kuliner budaya Indonesia disertai dengan kosakata yang terdapat pada soal
                                         latihan yang diperdengarkan. Pembelajar diminta untuk menjawab soal pilihan
-                                        ganda dan essai dari soal latihan yang diperdengarkan.</h5>
-                                    <h5 class="bnr-para-rectangle">
-                                        (Contains intensive listening skills in the form of audio and images about
+                                        ganda dan essai dari soal latihan yang diperdengarkan.</h4>
+                                    <h4 class="bnr-para-rectangle" style="font-size:16px;">
+                                        <strong>(Excercise</strong> : <i>Contains intensive listening skills in the form
+                                            of audio and images about
                                             culinary tourism in Indonesian culture accompanied by vocabulary contained
                                             in the practice questions that are played. Learners are asked to answer
                                             multiple choice questions and essays from practice questions that are
-                                            played.)</h5>
+                                            played.</i>)</h4>
                                     <br>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>Ujian </strong></h4>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>(Test)</strong></h4>
-                                    <h5 class="bnr-para-rectangle">
-                                        Berisi ujian/tes keterampilan menyimak berupa audio dan gambar tentang wisata
+                                    <h4 class="bnr-para-rectangle" style="font-size:16px;">
+                                        <strong>Ujian</strong> : Berisi ujian/tes keterampilan menyimak berupa audio dan
+                                        gambar tentang wisata
                                         kuliner yang ada di Indonesiadisertai dengan kosakata yang terdapat pada soal
-                                        ujian yang diperdengarkan.</h5>
-                                    <h5 class="bnr-para-rectangle">
-                                        (Contains examination / listening skills tests in the form of audio and
+                                        ujian yang diperdengarkan.</h4>
+                                    <h4 class="bnr-para-rectangle" style="font-size:16px;">
+                                        <strong>(Test </strong> : <i>Contains examination / listening skills tests in
+                                            the form of audio and
                                             pictures about culinary tourism in Indonesia along with the vocabulary
-                                            contained in the exam questions that are played.)</h5>
+                                            contained in the exam questions that are played.</i>)</h4>
                                     <br>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>Tebak Kata </strong></h4>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>(Guess the Word)</strong></h4>
-                                    <h5 class="bnr-para-rectangle">
-                                        Berisi tentang wisata kuliner Indonesia dari 33 Provinsi disertai dengan gambar
+                                    <h4 class="bnr-para-rectangle" style="font-size:16px;">
+                                        <strong>Tebak Kata</strong> : Berisi tentang wisata kuliner Indonesia dari 33
+                                        Provinsi disertai dengan gambar
                                         dan audio untuk di diperdengarkan kepada pengguna bahan ajar “SMART BIPA”
-                                        kemudian pengguna di minta untuk menebak kata yang ada dalam audio.</h5>
-                                    <h5 class="bnr-para-rectangle">
-                                        (Contains Indonesian culinary tourism from 33 provinces accompanied by
+                                        kemudian pengguna di minta untuk menebak kata yang ada dalam audio.</h4>
+                                    <h4 class="bnr-para-rectangle" style="font-size:16px;">
+                                        <strong>(Guess the Word</strong> : <i>Contains Indonesian culinary tourism from
+                                            33 provinces accompanied by
                                             pictures and audio to be played with users of the teaching material "SMART
-                                            BIPA" then the user is asked to guess the words in the audio.)</h5>
+                                            BIPA" then the user is asked to guess the words in the audio.</i>)</h4>
                                     <br>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>Youtube </strong></h4>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>(Youtube) </strong></h4>
-                                    <h5 class="bnr-para-rectangle">
-                                        Situs youtube yang dapat diakses oleh pengguna website “SMART BIPA” untuk
-                                        melihat wisata kuliner yang ada di Indonesia.</h5>
-                                    <h5 class="bnr-para-rectangle">
-                                        (Youtube site that can be accessed by users of the website "SMART BIPA" to see
-                                            culinary tours in Indonesia.)</h5>
+                                    <h4 class="bnr-para-rectangle" style="font-size:16px;">
+                                        <strong>Denah Kuliner Malang</strong> : Situs denah kuliner kota Malang yang
+                                        dapat diakses oleh pengguna
+                                        website “SMART BIPA” untuk melihat wisata kuliner yang ada di Malang.</h4>
+                                    <h4 class="bnr-para-rectangle" style="font-size:16px;">
+                                        <strong>((Culinary place in Malang</strong> : <i>Malang culinary place site that
+                                            can be accessed by users of the
+                                            website &quot;SMART BIPA&quot; to see culinary tours in Malang.</i>)</h4>
                                     <br>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>Daftar Pustaka </strong></h4>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>(Bibliography)</strong></h4>
-                                    <h5 class="bnr-para-rectangle">
-                                        Berisi tentang sumber belajar yang digunakan pada materi, latijan dan ujian.
-                                    </h5>
-                                    <h5 class="bnr-para-rectangle">
-                                        (Contains the learning resources used in the material, exercises and
-                                            examinations.)</h5>
+                                    <h4 class="bnr-para-rectangle" style="font-size:16px;">
+                                        <strong>Daftar Pustaka</strong> : Berisi tentang sumber belajar yang digunakan
+                                        pada materi, latijan dan ujian.</h4>
+                                    <h4 class="bnr-para-rectangle" style="font-size:16px;">
+                                        <strong>(Bibliography</strong> : <i>Contains the learning resources used in the
+                                            material, exercises and
+                                            examinations.</i>)</h4>
                                     <br>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>Profil </strong></h4>
-                                    <h4 class="bnr-para-rectangle">
-                                        <strong>(Profile) </strong></h4>
-                                    <h5 class="bnr-para-rectangle">
-                                        Berisi profil penulis atau pengembang bahan ajar website “SMART BIPA”.</h5>
-                                    <h5 class="bnr-para-rectangle">
-                                        (Contains the profile of the author or developer of teaching materials on the
-                                            website "SMART BIPA".)</h5>
+                                    <h4 class="bnr-para-rectangle" style="font-size:16px;">
+                                        <strong>Profil</strong> : Berisi profil penulis atau pengembang bahan ajar
+                                        website “SMART BIPA”.</h4>
+                                    <h4 class="bnr-para-rectangle" style="font-size:16px;">
+                                        <strong>(Profile</strong> : <i>Contains the profile of the author or developer
+                                            of teaching materials on the
+                                            website "SMART BIPA".</i>)</h4>
                                     <br>
                                     <?php endforeach ?>
                                 </div>
                             </div>
                         </div>
                         <!-- Column -->
-                    <!-- </div><a href="<?php echo base_url('menu/prev_petunjuk/'.$key['id']);?>" class="btn-primary">&laquo;
+                        <!-- </div><a href="<?php echo base_url('menu/prev_petunjuk/'.$key['id']);?>" class="btn-primary">&laquo;
                         Previous</a>
                     <a href="<?php echo base_url('menu/next_petunjuk/'.$key['id']);?>" class="btn-primary">Next
                         &raquo;</a> -->
+                    </div>
                 </div>
+            </section>
         </div>
-        </section>
-    </div>
-    <!---->
-    <!---->
-    <footer id="footer">
-        <div class="container">
-            <div class="row text-center">
-                <p> <?php echo date("Y"); ?> &copy; Rundeveloper. All Rights Reserved.</p>
+        <!---->
+        <!---->
+        <footer id="footer">
+            <div class="container">
+                <div class="row text-center">
+                    <p> <?php echo date("Y"); ?> &copy; Rundeveloper. All Rights Reserved.</p>
+                </div>
             </div>
-        </div>
-    </footer>
-    <!---->
+        </footer>
+        <!---->
     </div>
     <script src=<?php echo base_url('assets/js/jquery.min.js')?>></script>
     <script src=<?php echo base_url('assets/js/jquery.easing.min.js')?>></script>

@@ -47,8 +47,13 @@
         </div>
         <div class="container wow fadeInUp delay-05s">
           <div class="col-md-12 text-center section-padding">
-            <h2 class="bnr-sub-title">Bahasa Indonesia Untuk Penutur Asing Level Bipa-2</h2>
-            <h3 class="bnr-para">WAWASAN WISATA KULINER BUDAYA INDONESIA</h3>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+            <h2 class="bnr-sub-title text-black">Bahasa Indonesia Untuk Penutur Asing Level Bipa-2</h2>
+            <h3 class="bnr-para text-black">WAWASAN WISATA KULINER BUDAYA INDONESIA</h3>
           </div>
           <!-- Column -->
           <div class="row">
@@ -145,7 +150,7 @@
               <div class="card card-hover" onclick="location.href='youtube'">
                 <div class="box bg-brown text-center">
                   <h1 class="font-light text-white"><i class="fa fa-youtube-play"></i></h1>
-                  <h6 class="text-white">YOUTUBE</h6>
+                  <h6 class="text-white">DENAH KULINER MALANG</h6>
                 </div>
               </div>
             </div>

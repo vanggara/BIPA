@@ -1671,8 +1671,14 @@ mark {
 }
 
 .text-center {
+    color: #ffffff;
     text-align: center
 }
+
+.text-black {
+    color: #000000;
+    text-align: center !important;
+  }
 
 .text-justify {
     text-align: justify
@@ -7876,7 +7882,7 @@ button.close {
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #000\9;
+    background-color: #0009;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #fff;
     border-radius: 10px

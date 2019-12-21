@@ -50,11 +50,11 @@
                 <div class="container wow fadeInUp delay-05s">
                     <div class="col-md-12 text-center section-padding">
                         <?php if($score < 70){ ?>
-                        <h3 class="text-center">Sayang sekali, Anda belum berhasil menyelesaikan pelajaran ini !</h3>
+                        <h3 class="text-center text-black">Sayang sekali, Anda belum berhasil menyelesaikan pelajaran ini !</h3>
                         <?php }else{ ?>
-                        <h3 class="text-center">Wow, Anda berhasil menyelesaikan pelajaran ini !</h3>
+                        <h3 class="text-center text-black">Wow, Anda berhasil menyelesaikan pelajaran ini !</h3>
                         <?php } ?>
-                        <h3 class="text-center" color="red">Score anda : <?php echo $score ?></h3>
+                        <h3 class="text-center text-black" color="red">Score anda : <?php echo $score ?></h3>
                     </div>
                     <!-- Column -->
                     <div class="col-md-12">

@@ -5,26 +5,55 @@ class CLatihan extends CI_Controller {
 
     public function page($id='')
 	{
-        $cek_jawaban=$this->db->query("SELECT * FROM hasil_latihan WHERE id_user = '$_SESSION[id_user]' AND id_soal = '$id'");
+        $cek_jawaban=$this->db->query("SELECT * FROM hasil_latihan WHERE id_user = ".$_SESSION['id_user']." AND id_soal = '$id'");
+        // echo var_dump($_SESSION['id_user']);
 		if($cek_jawaban->num_rows() > 0 ){
-                    $kunci =  $this->db->query('SELECT kunci AS knc from soal_latihan where id = "'.$id.'"')->row()->knc;
-                    if(isset($_POST['jawaban'])){
-                        if(strcasecmp($kunci,$_POST['jawaban']) == 0){
-                            $status = "1";
-                        }else{
-                            $status = "0";
-                        }
-                        $data = [
-                            'jawaban' => $_POST['jawaban'],
-                            'status_jawaban' => $status
-                        ];
-                        // var_dump($status);
-                        $this->db->where('id_soal', $id);
-                        $this->db->where('id_user', $_SESSION['id_user']);
-                        $this->db->update('hasil_latihan', $data);
+            $max = $this->db->query('SELECT MAX(id) AS maxid FROM soal_latihan')->row()->maxid;
+            if(isset($_POST['jawaban'])&&$id!=$max){
+                $kunci =  $this->db->query('SELECT kunci AS knc from soal_latihan where id = "'.$id.'"')->row()->knc;
+                if(isset($_POST['jawaban'])){
+                    if(strcasecmp($kunci,$_POST['jawaban']) == 0){
+                        $status = "1";
+                    }else{
+                        $status = "0";
                     }
-            $data['content'] = $this->db->query('SELECT * from soal_latihan where id = (select min(id) from soal_latihan where id > '.$id.')');
-            $this->load->view('latihan', $data);
+                    $data = [
+                        'jawaban' => $_POST['jawaban'],
+                        'status_jawaban' => $status
+                    ];
+                    // var_dump($status);
+                    $this->db->where('id_soal', $id);
+                    $this->db->where('id_user', $_SESSION['id_user']);
+                    $this->db->update('hasil_latihan', $data);
+                }
+                $data['content'] = $this->db->query('SELECT * from soal_latihan where id = (select min(id) from soal_latihan where id > '.$id.')');
+                $this->load->view('latihan', $data);
+            }else if($id==$max){  
+                $kunci =  $this->db->query('SELECT kunci AS knc from soal_latihan where id = "'.$id.'"')->row()->knc;
+                if(isset($_POST['jawaban'])){
+                    if(strcasecmp($kunci,$_POST['jawaban']) == 0){
+                        $status = "1";
+                    }else{
+                        $status = "0";
+                    }
+                    $data = [
+                        'jawaban' => $_POST['jawaban'],
+                        'status_jawaban' => $status
+                    ];
+                    // var_dump($status);
+                    $this->db->where('id_soal', $id);
+                    $this->db->where('id_user', $_SESSION['id_user']);
+                    $this->db->update('hasil_latihan', $data);
+                }
+                $benar_pilgan = $this->db->query('SELECT * from hasil_latihan where id_soal <= 10 AND id_user = '.$_SESSION['id_user'].' AND status_jawaban = 1');
+                $benar_essay = $this->db->query('SELECT * from hasil_latihan where id_soal >= 11 AND id_user = '.$_SESSION['id_user'].' AND status_jawaban = 1');
+                $score_pilgan = $benar_pilgan->num_rows()*2.5;
+                $score_essay = $benar_essay->num_rows()*15;
+                $data['score'] =  $score_pilgan+$score_essay;
+                // echo "ok";
+                // var_dump($score_pilgan);
+                $this->load->view('latihan_selesai',$data);
+            }
 		}else{
             $max = $this->db->query('SELECT MAX(id) AS maxid FROM soal_latihan')->row()->maxid;
                 if(isset($_POST['jawaban'])&&$id!=$max){
@@ -63,9 +92,10 @@ class CLatihan extends CI_Controller {
                     $score_pilgan = $benar_pilgan->num_rows()*2.5;
                     $score_essay = $benar_essay->num_rows()*15;
                     $data['score'] =  $score_pilgan+$score_essay;
+                    // echo "ok";
                     // var_dump($score_pilgan);
-                    // var_dump($score_essay);
                     $this->load->view('latihan_selesai',$data);
+                    // var_dump($data);
         // redirect('selesai','refresh');
                 }
         }
