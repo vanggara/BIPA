@@ -49,7 +49,7 @@
                 </div>
                 <div class="container wow fadeInUp delay-05s">
                     <div class="col-md-12 text-center section-padding">
-                        <h2 class="bnr-sub-title">SMART BIPA</h2>
+                        <h2 class="bnr-sub-title">KOSA KATA</h2>
                         <h3 class="bnr-para">Kamus Sederet.com</h3>
                     </div>
                     <!-- Column -->

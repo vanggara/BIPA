@@ -168,7 +168,16 @@
           </div>
           <div class="row">
             <!-- Column -->
-            <div class="col-md-12">
+            <div class="col-md-6">
+              <div class="card card-hover" onclick="location.href='kosa-kata'">
+                <div class="box bg-brown text-center">
+                  <h1 class="font-light text-white"><i class="fa fa-book"></i></h1>
+                  <h6 class="text-white">KOSA KATA</h6>
+                </div>
+              </div>
+            </div>
+            <!-- Column -->
+            <div class="col-md-6">
               <div class="card card-hover" onclick="location.href='profil'">
                 <div class="box bg-brown text-center">
                   <h1 class="font-light text-white"><i class="fa fa-address-card"></i></h1>

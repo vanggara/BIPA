@@ -85,4 +85,10 @@ class Menu extends CI_Controller {
 	{
 		$this->load->view('daftar_pustaka');
 	}
+	
+	public function kosa_kata()
+	{
+        $this->load->model('MKosaKata');
+        $this->MKosaKata->kosa_kata();
+	}
 }
